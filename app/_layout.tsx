@@ -1,11 +1,18 @@
 import '../global.css';
 import '@/i18n';
 
-import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
+import { DarkTheme, DefaultTheme, type ErrorBoundaryProps, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
 import { DatabaseGate } from '@/features/common/DatabaseGate';
+import { ErrorScreen } from '@/features/common/ErrorScreen';
 import { useThemeColors } from '@/theme/useThemeColors';
+
+// Expo Router renders this instead of the layout when anything below throws,
+// including database open and migration errors from DatabaseGate.
+export function ErrorBoundary(props: ErrorBoundaryProps) {
+  return <ErrorScreen {...props} />;
+}
 
 export default function RootLayout() {
   const { scheme, colors } = useThemeColors();

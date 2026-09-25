@@ -1,0 +1,3611 @@
+[
+  {
+    "fdcId": "170457",
+    "usdaDescription": "Tomatoes, red, ripe, raw, year round average",
+    "nameMk": "Домати",
+    "nameEn": "Tomatoes",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "321360",
+    "usdaDescription": "Tomatoes, grape, raw",
+    "nameMk": "Чери домати",
+    "nameEn": "Cherry tomatoes",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170456",
+    "usdaDescription": "Tomatoes, green, raw",
+    "nameMk": "Зелени домати",
+    "nameEn": "Green tomatoes",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168409",
+    "usdaDescription": "Cucumber, with peel, raw",
+    "nameMk": "Краставица",
+    "nameEn": "Cucumber",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169225",
+    "usdaDescription": "Cucumber, peeled, raw",
+    "nameMk": "Краставица, лупена",
+    "nameEn": "Cucumber, peeled",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170108",
+    "usdaDescription": "Peppers, sweet, red, raw",
+    "nameMk": "Црвена пиперка (бабура)",
+    "nameEn": "Red bell pepper",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170427",
+    "usdaDescription": "Peppers, sweet, green, raw",
+    "nameMk": "Зелена пиперка (бабура)",
+    "nameEn": "Green bell pepper",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169383",
+    "usdaDescription": "Peppers, sweet, yellow, raw",
+    "nameMk": "Жолта пиперка (бабура)",
+    "nameEn": "Yellow bell pepper",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168578",
+    "usdaDescription": "Peppers, hungarian, raw",
+    "nameMk": "Бела пиперка (шилеста)",
+    "nameEn": "White pepper (pointed)",
+    "group": "Vegetables, raw",
+    "note": "USDA \"Hungarian pepper\" used as the closest match for Macedonian pointed white peppers"
+  },
+  {
+    "fdcId": "169394",
+    "usdaDescription": "Pepper, banana, raw",
+    "nameMk": "Бела пиперка (бабура)",
+    "nameEn": "White pepper (banana)",
+    "group": "Vegetables, raw",
+    "note": "USDA \"banana pepper\" as the closest match"
+  },
+  {
+    "fdcId": "170497",
+    "usdaDescription": "Peppers, hot chili, green, raw",
+    "nameMk": "Лута пиперка, зелена",
+    "nameEn": "Hot chili pepper, green",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170106",
+    "usdaDescription": "Peppers, hot chili, red, raw",
+    "nameMk": "Лута пиперка, црвена",
+    "nameEn": "Hot chili pepper, red",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169228",
+    "usdaDescription": "Eggplant, raw",
+    "nameMk": "Модар патлиџан",
+    "nameEn": "Eggplant",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169291",
+    "usdaDescription": "Squash, summer, zucchini, includes skin, raw",
+    "nameMk": "Тиквичка",
+    "nameEn": "Zucchini",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168448",
+    "usdaDescription": "Pumpkin, raw",
+    "nameMk": "Тиква",
+    "nameEn": "Pumpkin",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169295",
+    "usdaDescription": "Squash, winter, butternut, raw",
+    "nameMk": "Тиква батернат",
+    "nameEn": "Butternut squash",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170000",
+    "usdaDescription": "Onions, raw",
+    "nameMk": "Кромид",
+    "nameEn": "Onion",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "790577",
+    "usdaDescription": "Onions, red, raw",
+    "nameMk": "Црвен кромид",
+    "nameEn": "Red onion",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170005",
+    "usdaDescription": "Onions, spring or scallions (includes tops and bulb), raw",
+    "nameMk": "Млад кромид",
+    "nameEn": "Spring onion",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169230",
+    "usdaDescription": "Garlic, raw",
+    "nameMk": "Лук",
+    "nameEn": "Garlic",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169246",
+    "usdaDescription": "Leeks, (bulb and lower leaf-portion), raw",
+    "nameMk": "Праз",
+    "nameEn": "Leek",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170499",
+    "usdaDescription": "Shallots, raw",
+    "nameMk": "Шалот",
+    "nameEn": "Shallots",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170393",
+    "usdaDescription": "Carrots, raw",
+    "nameMk": "Морков",
+    "nameEn": "Carrot",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170026",
+    "usdaDescription": "Potatoes, flesh and skin, raw",
+    "nameMk": "Компир",
+    "nameEn": "Potato",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "2346404",
+    "usdaDescription": "Sweet potatoes, orange flesh, without skin, raw",
+    "nameMk": "Сладок компир",
+    "nameEn": "Sweet potato",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169975",
+    "usdaDescription": "Cabbage, raw",
+    "nameMk": "Зелка",
+    "nameEn": "Cabbage",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169977",
+    "usdaDescription": "Cabbage, red, raw",
+    "nameMk": "Црвена зелка",
+    "nameEn": "Red cabbage",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170388",
+    "usdaDescription": "Cabbage, savoy, raw",
+    "nameMk": "Кељ",
+    "nameEn": "Savoy cabbage",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169986",
+    "usdaDescription": "Cauliflower, raw",
+    "nameMk": "Карфиол",
+    "nameEn": "Cauliflower",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170379",
+    "usdaDescription": "Broccoli, raw",
+    "nameMk": "Брокула",
+    "nameEn": "Broccoli",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170383",
+    "usdaDescription": "Brussels sprouts, raw",
+    "nameMk": "Прокељ",
+    "nameEn": "Brussels sprouts",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168462",
+    "usdaDescription": "Spinach, raw",
+    "nameMk": "Спанаќ",
+    "nameEn": "Spinach",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169991",
+    "usdaDescription": "Chard, swiss, raw",
+    "nameMk": "Блитва",
+    "nameEn": "Swiss chard",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169247",
+    "usdaDescription": "Lettuce, cos or romaine, raw",
+    "nameMk": "Зелена салата (ромен)",
+    "nameEn": "Romaine lettuce",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169249",
+    "usdaDescription": "Lettuce, green leaf, raw",
+    "nameMk": "Зелена салата",
+    "nameEn": "Green leaf lettuce",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169248",
+    "usdaDescription": "Lettuce, iceberg (includes crisphead types), raw",
+    "nameMk": "Ајсберг салата",
+    "nameEn": "Iceberg lettuce",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169387",
+    "usdaDescription": "Arugula, raw",
+    "nameMk": "Рукола",
+    "nameEn": "Arugula",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169145",
+    "usdaDescription": "Beets, raw",
+    "nameMk": "Цвекло",
+    "nameEn": "Beetroot",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169276",
+    "usdaDescription": "Radishes, raw",
+    "nameMk": "Ротквица",
+    "nameEn": "Radishes",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170465",
+    "usdaDescription": "Turnips, raw",
+    "nameMk": "Репа",
+    "nameEn": "Turnip",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170400",
+    "usdaDescription": "Celeriac, raw",
+    "nameMk": "Целер (корен)",
+    "nameEn": "Celeriac",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169988",
+    "usdaDescription": "Celery, raw",
+    "nameMk": "Целер (стебло)",
+    "nameEn": "Celery",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170417",
+    "usdaDescription": "Parsnips, raw",
+    "nameMk": "Пашканат",
+    "nameEn": "Parsnip",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169961",
+    "usdaDescription": "Beans, snap, green, raw",
+    "nameMk": "Боранија",
+    "nameEn": "Green beans",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170419",
+    "usdaDescription": "Peas, green, raw",
+    "nameMk": "Грашок",
+    "nameEn": "Green peas",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169260",
+    "usdaDescription": "Okra, raw",
+    "nameMk": "Бамја",
+    "nameEn": "Okra",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169998",
+    "usdaDescription": "Corn, sweet, yellow, raw",
+    "nameMk": "Пченка шеќерка",
+    "nameEn": "Sweet corn",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169251",
+    "usdaDescription": "Mushrooms, white, raw",
+    "nameMk": "Печурки (шампињони)",
+    "nameEn": "White mushrooms",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168434",
+    "usdaDescription": "Mushrooms, brown, italian, or crimini, raw",
+    "nameMk": "Кафени печурки",
+    "nameEn": "Brown mushrooms",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168580",
+    "usdaDescription": "Mushrooms, oyster, raw",
+    "nameMk": "Буковки",
+    "nameEn": "Oyster mushrooms",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169385",
+    "usdaDescription": "Fennel, bulb, raw",
+    "nameMk": "Морач",
+    "nameEn": "Fennel bulb",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168424",
+    "usdaDescription": "Kohlrabi, raw",
+    "nameMk": "Келераба",
+    "nameEn": "Kohlrabi",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168421",
+    "usdaDescription": "Kale, raw",
+    "nameMk": "Кејл",
+    "nameEn": "Kale",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169994",
+    "usdaDescription": "Chives, raw",
+    "nameMk": "Власац",
+    "nameEn": "Chives",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170416",
+    "usdaDescription": "Parsley, fresh",
+    "nameMk": "Магдонос (свеж)",
+    "nameEn": "Parsley, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169997",
+    "usdaDescription": "Coriander (cilantro) leaves, raw",
+    "nameMk": "Коријандер (свеж)",
+    "nameEn": "Cilantro, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "172232",
+    "usdaDescription": "Basil, fresh",
+    "nameMk": "Босилек (свеж)",
+    "nameEn": "Basil, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "172233",
+    "usdaDescription": "Dill weed, fresh",
+    "nameMk": "Копар (свеж)",
+    "nameEn": "Dill, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "173475",
+    "usdaDescription": "Spearmint, fresh",
+    "nameMk": "Нане (свежо)",
+    "nameEn": "Mint, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "173473",
+    "usdaDescription": "Rosemary, fresh",
+    "nameMk": "Рузмарин (свеж)",
+    "nameEn": "Rosemary, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "173470",
+    "usdaDescription": "Thyme, fresh",
+    "nameMk": "Мајчина душица (свежа)",
+    "nameEn": "Thyme, fresh",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169231",
+    "usdaDescription": "Ginger root, raw",
+    "nameMk": "Ѓумбир (корен)",
+    "nameEn": "Ginger root",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168575",
+    "usdaDescription": "Grape leaves, raw",
+    "nameMk": "Лозов лист",
+    "nameEn": "Grape leaves",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "168389",
+    "usdaDescription": "Asparagus, raw",
+    "nameMk": "Шпаргла",
+    "nameEn": "Asparagus",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169205",
+    "usdaDescription": "Artichokes, (globe or french), raw",
+    "nameMk": "Артичока",
+    "nameEn": "Artichoke",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "170076",
+    "usdaDescription": "Dock, raw",
+    "nameMk": "Штавел",
+    "nameEn": "Sorrel (dock)",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169256",
+    "usdaDescription": "Mustard greens, raw",
+    "nameMk": "Синап (лисја)",
+    "nameEn": "Mustard greens",
+    "group": "Vegetables, raw"
+  },
+  {
+    "fdcId": "169141",
+    "usdaDescription": "Beans, snap, green, cooked, boiled, drained, without salt",
+    "nameMk": "Боранија, варена",
+    "nameEn": "Green beans, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169967",
+    "usdaDescription": "Broccoli, cooked, boiled, drained, without salt",
+    "nameMk": "Брокула, варена",
+    "nameEn": "Broccoli, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169976",
+    "usdaDescription": "Cabbage, cooked, boiled, drained, without salt",
+    "nameMk": "Зелка, варена",
+    "nameEn": "Cabbage, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170394",
+    "usdaDescription": "Carrots, cooked, boiled, drained, without salt",
+    "nameMk": "Морков, варен",
+    "nameEn": "Carrot, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170397",
+    "usdaDescription": "Cauliflower, cooked, boiled, drained, without salt",
+    "nameMk": "Карфиол, варен",
+    "nameEn": "Cauliflower, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169229",
+    "usdaDescription": "Eggplant, cooked, boiled, drained, without salt",
+    "nameMk": "Модар патлиџан, варен",
+    "nameEn": "Eggplant, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169252",
+    "usdaDescription": "Mushrooms, white, cooked, boiled, drained, without salt",
+    "nameMk": "Печурки, варени",
+    "nameEn": "Mushrooms, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170001",
+    "usdaDescription": "Onions, cooked, boiled, drained, without salt",
+    "nameMk": "Кромид, варен",
+    "nameEn": "Onion, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170017",
+    "usdaDescription": "Peas, green, frozen, cooked, boiled, drained, without salt",
+    "nameMk": "Грашок, замрзнат, варен",
+    "nameEn": "Frozen peas, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170015",
+    "usdaDescription": "Peas, green, canned, drained solids, rinsed in tap water",
+    "nameMk": "Грашок, конзервиран",
+    "nameEn": "Canned peas",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169214",
+    "usdaDescription": "Corn, sweet, yellow, canned, whole kernel, drained solids",
+    "nameMk": "Пченка, конзервирана",
+    "nameEn": "Canned sweet corn",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "168463",
+    "usdaDescription": "Spinach, cooked, boiled, drained, without salt",
+    "nameMk": "Спанаќ, варен",
+    "nameEn": "Spinach, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169292",
+    "usdaDescription": "Squash, summer, zucchini, includes skin, cooked, boiled, drained, without salt",
+    "nameMk": "Тиквичка, варена",
+    "nameEn": "Zucchini, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170110",
+    "usdaDescription": "Peppers, sweet, red, cooked, boiled, drained, without salt",
+    "nameMk": "Црвена пиперка, варена",
+    "nameEn": "Red pepper, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "168550",
+    "usdaDescription": "Peppers, sweet, red, sauteed",
+    "nameMk": "Црвена пиперка, пржена",
+    "nameEn": "Red pepper, sautéed",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "168546",
+    "usdaDescription": "Peppers, sweet, red, canned, solids and liquids",
+    "nameMk": "Црвена пиперка, конзервирана",
+    "nameEn": "Red pepper, canned",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170438",
+    "usdaDescription": "Potatoes, boiled, cooked in skin, flesh, without salt",
+    "nameMk": "Компир, варен",
+    "nameEn": "Potato, boiled",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170093",
+    "usdaDescription": "Potatoes, baked, flesh and skin, without salt",
+    "nameMk": "Компир, печен",
+    "nameEn": "Potato, baked",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "168555",
+    "usdaDescription": "Potatoes, mashed, home-prepared, whole milk and butter added",
+    "nameMk": "Пире од компир",
+    "nameEn": "Mashed potatoes",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169264",
+    "usdaDescription": "Potatoes, french fried, all types, salt added in processing, frozen, home-prepared, oven heated",
+    "nameMk": "Помфрит (печен во рерна)",
+    "nameEn": "French fries, oven-baked",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170050",
+    "usdaDescription": "Tomatoes, red, ripe, cooked",
+    "nameMk": "Домати, варени",
+    "nameEn": "Tomatoes, cooked",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170051",
+    "usdaDescription": "Tomatoes, red, ripe, canned, packed in tomato juice",
+    "nameMk": "Домати, конзервирани",
+    "nameEn": "Canned tomatoes",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170501",
+    "usdaDescription": "Tomatoes, crushed, canned",
+    "nameMk": "Сецкани домати (конзерва)",
+    "nameEn": "Crushed tomatoes, canned",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170459",
+    "usdaDescription": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Доматна паста",
+    "nameEn": "Tomato paste",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170460",
+    "usdaDescription": "Tomato products, canned, puree, without salt added",
+    "nameMk": "Доматно пире",
+    "nameEn": "Tomato purée",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170054",
+    "usdaDescription": "Tomato products, canned, sauce",
+    "nameMk": "Доматен сос",
+    "nameEn": "Tomato sauce",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "168567",
+    "usdaDescription": "Tomatoes, sun-dried",
+    "nameMk": "Сушени домати",
+    "nameEn": "Sun-dried tomatoes",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "170545",
+    "usdaDescription": "Tomato juice, canned, without salt added",
+    "nameMk": "Сок од домати",
+    "nameEn": "Tomato juice",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "168558",
+    "usdaDescription": "Pickles, cucumber, dill or kosher dill",
+    "nameMk": "Кисели краставички (со копар)",
+    "nameEn": "Dill pickles",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169379",
+    "usdaDescription": "Pickles, cucumber, sour",
+    "nameMk": "Кисели краставички (во саламура)",
+    "nameEn": "Sour pickles",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169279",
+    "usdaDescription": "Sauerkraut, canned, solids and liquids",
+    "nameMk": "Кисела зелка",
+    "nameEn": "Sauerkraut",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169096",
+    "usdaDescription": "Olives, pickled, canned or bottled, green",
+    "nameMk": "Зелени маслинки",
+    "nameEn": "Green olives",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "169094",
+    "usdaDescription": "Olives, ripe, canned (small-extra large)",
+    "nameMk": "Црни маслинки",
+    "nameEn": "Black olives",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "172238",
+    "usdaDescription": "Capers, canned",
+    "nameMk": "Капар",
+    "nameEn": "Capers",
+    "group": "Vegetables, cooked and canned"
+  },
+  {
+    "fdcId": "171688",
+    "usdaDescription": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Јаболко",
+    "nameEn": "Apple",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171689",
+    "usdaDescription": "Apples, raw, without skin",
+    "nameMk": "Јаболко, лупено",
+    "nameEn": "Apple, peeled",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173944",
+    "usdaDescription": "Bananas, raw",
+    "nameMk": "Банана",
+    "nameEn": "Banana",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169097",
+    "usdaDescription": "Oranges, raw, all commercial varieties",
+    "nameMk": "Портокал",
+    "nameEn": "Orange",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169105",
+    "usdaDescription": "Tangerines, (mandarin oranges), raw",
+    "nameMk": "Мандарина",
+    "nameEn": "Mandarin",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "168195",
+    "usdaDescription": "Clementines, raw",
+    "nameMk": "Клементина",
+    "nameEn": "Clementine",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173033",
+    "usdaDescription": "Grapefruit, raw, pink and red and white, all areas",
+    "nameMk": "Грејпфрут",
+    "nameEn": "Grapefruit",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "167746",
+    "usdaDescription": "Lemons, raw, without peel",
+    "nameMk": "Лимон",
+    "nameEn": "Lemon",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "167747",
+    "usdaDescription": "Lemon juice, raw",
+    "nameMk": "Сок од лимон",
+    "nameEn": "Lemon juice",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "167749",
+    "usdaDescription": "Lemon peel, raw",
+    "nameMk": "Кора од лимон",
+    "nameEn": "Lemon peel",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "168155",
+    "usdaDescription": "Limes, raw",
+    "nameMk": "Лимета",
+    "nameEn": "Lime",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "174683",
+    "usdaDescription": "Grapes, red or green (European type, such as Thompson seedless), raw",
+    "nameMk": "Грозје",
+    "nameEn": "Grapes",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169118",
+    "usdaDescription": "Pears, raw",
+    "nameMk": "Круша",
+    "nameEn": "Pear",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169928",
+    "usdaDescription": "Peaches, yellow, raw",
+    "nameMk": "Праска",
+    "nameEn": "Peach",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169914",
+    "usdaDescription": "Nectarines, raw",
+    "nameMk": "Нектарина",
+    "nameEn": "Nectarine",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171697",
+    "usdaDescription": "Apricots, raw",
+    "nameMk": "Кајсија",
+    "nameEn": "Apricot",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169949",
+    "usdaDescription": "Plums, raw",
+    "nameMk": "Слива",
+    "nameEn": "Plum",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171719",
+    "usdaDescription": "Cherries, sweet, raw",
+    "nameMk": "Цреша",
+    "nameEn": "Sweet cherries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173954",
+    "usdaDescription": "Cherries, sour, red, raw",
+    "nameMk": "Вишна",
+    "nameEn": "Sour cherries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "167762",
+    "usdaDescription": "Strawberries, raw",
+    "nameMk": "Јагоди",
+    "nameEn": "Strawberries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "167755",
+    "usdaDescription": "Raspberries, raw",
+    "nameMk": "Малини",
+    "nameEn": "Raspberries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173946",
+    "usdaDescription": "Blackberries, raw",
+    "nameMk": "Капини",
+    "nameEn": "Blackberries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171711",
+    "usdaDescription": "Blueberries, raw",
+    "nameMk": "Боровинки",
+    "nameEn": "Blueberries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169913",
+    "usdaDescription": "Mulberries, raw",
+    "nameMk": "Дудинки",
+    "nameEn": "Mulberries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "167765",
+    "usdaDescription": "Watermelon, raw",
+    "nameMk": "Лубеница",
+    "nameEn": "Watermelon",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169092",
+    "usdaDescription": "Melons, cantaloupe, raw",
+    "nameMk": "Диња",
+    "nameEn": "Cantaloupe melon",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169911",
+    "usdaDescription": "Melons, honeydew, raw",
+    "nameMk": "Медена диња",
+    "nameEn": "Honeydew melon",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "168163",
+    "usdaDescription": "Quinces, raw",
+    "nameMk": "Дуња",
+    "nameEn": "Quince",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169134",
+    "usdaDescription": "Pomegranates, raw",
+    "nameMk": "Калинка",
+    "nameEn": "Pomegranate",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173021",
+    "usdaDescription": "Figs, raw",
+    "nameMk": "Смокви",
+    "nameEn": "Figs",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "174665",
+    "usdaDescription": "Figs, dried, uncooked",
+    "nameMk": "Сушени смокви",
+    "nameEn": "Dried figs",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "168165",
+    "usdaDescription": "Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Суво грозје",
+    "nameEn": "Raisins",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171726",
+    "usdaDescription": "Dates, deglet noor",
+    "nameMk": "Урми",
+    "nameEn": "Dates",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173941",
+    "usdaDescription": "Apricots, dried, sulfured, uncooked",
+    "nameMk": "Сушени кајсии",
+    "nameEn": "Dried apricots",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "168162",
+    "usdaDescription": "Plums, dried (prunes), uncooked",
+    "nameMk": "Суви сливи",
+    "nameEn": "Prunes",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171691",
+    "usdaDescription": "Apples, dried, sulfured, uncooked",
+    "nameMk": "Сушени јаболка",
+    "nameEn": "Dried apples",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "168153",
+    "usdaDescription": "Kiwifruit, green, raw",
+    "nameMk": "Киви",
+    "nameEn": "Kiwi",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169910",
+    "usdaDescription": "Mangos, raw",
+    "nameMk": "Манго",
+    "nameEn": "Mango",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169124",
+    "usdaDescription": "Pineapple, raw, all varieties",
+    "nameMk": "Ананас",
+    "nameEn": "Pineapple",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171705",
+    "usdaDescription": "Avocados, raw, all commercial varieties",
+    "nameMk": "Авокадо",
+    "nameEn": "Avocado",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169941",
+    "usdaDescription": "Persimmons, japanese, raw",
+    "nameMk": "Каки",
+    "nameEn": "Persimmon",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173963",
+    "usdaDescription": "Currants, european black, raw",
+    "nameMk": "Црна рибизла",
+    "nameEn": "Blackcurrants",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173030",
+    "usdaDescription": "Gooseberries, raw",
+    "nameMk": "Огрозд",
+    "nameEn": "Gooseberries",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169926",
+    "usdaDescription": "Papayas, raw",
+    "nameMk": "Папаја",
+    "nameEn": "Papaya",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169098",
+    "usdaDescription": "Orange juice, raw (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Сок од портокал (цеден)",
+    "nameEn": "Orange juice, fresh",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173933",
+    "usdaDescription": "Apple juice, canned or bottled, unsweetened, without added ascorbic acid",
+    "nameMk": "Сок од јаболко",
+    "nameEn": "Apple juice",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "173042",
+    "usdaDescription": "Grape juice, canned or bottled, unsweetened, without added ascorbic acid",
+    "nameMk": "Сок од грозје",
+    "nameEn": "Grape juice",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "170169",
+    "usdaDescription": "Nuts, coconut meat, raw",
+    "nameMk": "Кокос",
+    "nameEn": "Coconut",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "170170",
+    "usdaDescription": "Nuts, coconut meat, dried (desiccated), not sweetened",
+    "nameMk": "Кокос, рендан (сушен)",
+    "nameEn": "Desiccated coconut",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "169112",
+    "usdaDescription": "Peaches, canned, heavy syrup pack, solids and liquids",
+    "nameMk": "Праски, компот",
+    "nameEn": "Canned peaches in syrup",
+    "group": "Fruit"
+  },
+  {
+    "fdcId": "171287",
+    "usdaDescription": "Egg, whole, raw, fresh",
+    "nameMk": "Јајце",
+    "nameEn": "Egg",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173424",
+    "usdaDescription": "Egg, whole, cooked, hard-boiled",
+    "nameMk": "Јајце, тврдо варено",
+    "nameEn": "Egg, hard-boiled",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173423",
+    "usdaDescription": "Egg, whole, cooked, fried",
+    "nameMk": "Јајце, пржено",
+    "nameEn": "Egg, fried",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172187",
+    "usdaDescription": "Egg, whole, cooked, scrambled",
+    "nameMk": "Кајгана",
+    "nameEn": "Scrambled eggs",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172185",
+    "usdaDescription": "Egg, whole, cooked, omelet",
+    "nameMk": "Омлет",
+    "nameEn": "Omelet",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172183",
+    "usdaDescription": "Egg, white, raw, fresh",
+    "nameMk": "Белка од јајце",
+    "nameEn": "Egg white",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172184",
+    "usdaDescription": "Egg, yolk, raw, fresh",
+    "nameMk": "Жолчка од јајце",
+    "nameEn": "Egg yolk",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172191",
+    "usdaDescription": "Egg, quail, whole, fresh, raw",
+    "nameMk": "Препелично јајце",
+    "nameEn": "Quail egg",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172217",
+    "usdaDescription": "Milk, whole, 3.25% milkfat, without added vitamin A and vitamin D",
+    "nameMk": "Млеко (3,2%)",
+    "nameEn": "Whole milk (3.25%)",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172205",
+    "usdaDescription": "Milk, reduced fat, fluid, 2% milkfat, without added vitamin A and vitamin D",
+    "nameMk": "Млеко (2%)",
+    "nameEn": "Milk (2%)",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173441",
+    "usdaDescription": "Milk, fluid, 1% fat, without added vitamin A and vitamin D",
+    "nameMk": "Млеко (1%)",
+    "nameEn": "Milk (1%)",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173432",
+    "usdaDescription": "Milk, nonfat, fluid, without added vitamin A and vitamin D (fat free or skim)",
+    "nameMk": "Обезмастено млеко",
+    "nameEn": "Skim milk",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170882",
+    "usdaDescription": "Milk, sheep, fluid",
+    "nameMk": "Овче млеко",
+    "nameEn": "Sheep milk",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171278",
+    "usdaDescription": "Milk, goat, fluid, with added vitamin D",
+    "nameMk": "Козјо млеко",
+    "nameEn": "Goat milk",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172225",
+    "usdaDescription": "Milk, buttermilk, fluid, whole",
+    "nameMk": "Матеница",
+    "nameEn": "Buttermilk",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171284",
+    "usdaDescription": "Yogurt, plain, whole milk",
+    "nameMk": "Кисело млеко (полномасно)",
+    "nameEn": "Yogurt, whole milk",
+    "group": "Dairy and eggs",
+    "note": "Plain yogurt; also used for Macedonian drinking yogurt (јогурт)"
+  },
+  {
+    "fdcId": "170886",
+    "usdaDescription": "Yogurt, plain, low fat",
+    "nameMk": "Кисело млеко (нискомасно)",
+    "nameEn": "Yogurt, low fat",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171304",
+    "usdaDescription": "Yogurt, Greek, plain, whole milk",
+    "nameMk": "Грчки јогурт",
+    "nameEn": "Greek yogurt",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170903",
+    "usdaDescription": "Yogurt, Greek, plain, lowfat",
+    "nameMk": "Грчки јогурт (нискомасен)",
+    "nameEn": "Greek yogurt, low fat",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170904",
+    "usdaDescription": "Kefir, lowfat, plain, LIFEWAY",
+    "nameMk": "Кефир",
+    "nameEn": "Kefir",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173420",
+    "usdaDescription": "Cheese, feta",
+    "nameMk": "Бело сирење",
+    "nameEn": "White cheese (feta)",
+    "group": "Dairy and eggs",
+    "note": "USDA feta as the closest match for Macedonian white brine cheese (бело сирење)"
+  },
+  {
+    "fdcId": "173435",
+    "usdaDescription": "Cheese, goat, soft type",
+    "nameMk": "Козјо сирење (меко)",
+    "nameEn": "Goat cheese, soft",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173433",
+    "usdaDescription": "Cheese, goat, semisoft type",
+    "nameMk": "Козјо сирење (полутврдо)",
+    "nameEn": "Goat cheese, semi-soft",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170850",
+    "usdaDescription": "Cheese, provolone",
+    "nameMk": "Кашкавал",
+    "nameEn": "Kashkaval",
+    "group": "Dairy and eggs",
+    "note": "USDA provolone as the closest match; no kashkaval in USDA"
+  },
+  {
+    "fdcId": "170845",
+    "usdaDescription": "Cheese, mozzarella, whole milk",
+    "nameMk": "Моцарела",
+    "nameEn": "Mozzarella",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171247",
+    "usdaDescription": "Cheese, parmesan, grated",
+    "nameMk": "Пармезан (рендан)",
+    "nameEn": "Parmesan, grated",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170848",
+    "usdaDescription": "Cheese, parmesan, hard",
+    "nameMk": "Пармезан",
+    "nameEn": "Parmesan",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173414",
+    "usdaDescription": "Cheese, cheddar (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Чедар",
+    "nameEn": "Cheddar",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171241",
+    "usdaDescription": "Cheese, gouda",
+    "nameMk": "Гауда",
+    "nameEn": "Gouda",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173419",
+    "usdaDescription": "Cheese, edam",
+    "nameMk": "Едамер",
+    "nameEn": "Edam",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171251",
+    "usdaDescription": "Cheese, swiss",
+    "nameMk": "Ементалер",
+    "nameEn": "Emmental (Swiss cheese)",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172175",
+    "usdaDescription": "Cheese, blue",
+    "nameMk": "Сино сирење",
+    "nameEn": "Blue cheese",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172177",
+    "usdaDescription": "Cheese, brie",
+    "nameMk": "Бри",
+    "nameEn": "Brie",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "172178",
+    "usdaDescription": "Cheese, camembert",
+    "nameMk": "Камамбер",
+    "nameEn": "Camembert",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170851",
+    "usdaDescription": "Cheese, ricotta, whole milk",
+    "nameMk": "Урда (рикота)",
+    "nameEn": "Ricotta (urda)",
+    "group": "Dairy and eggs",
+    "note": "USDA whole-milk ricotta as the closest match for урда"
+  },
+  {
+    "fdcId": "172179",
+    "usdaDescription": "Cheese, cottage, creamed, large or small curd",
+    "nameMk": "Посно сирење (котиџ)",
+    "nameEn": "Cottage cheese",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173418",
+    "usdaDescription": "Cheese, cream",
+    "nameMk": "Крем сирење",
+    "nameEn": "Cream cheese",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171257",
+    "usdaDescription": "Cream, sour, cultured",
+    "nameMk": "Павлака",
+    "nameEn": "Sour cream",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170859",
+    "usdaDescription": "Cream, fluid, heavy whipping",
+    "nameMk": "Слатка павлака (за шлаг)",
+    "nameEn": "Heavy whipping cream",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170857",
+    "usdaDescription": "Cream, fluid, light (coffee cream or table cream)",
+    "nameMk": "Слатка павлака (за готвење)",
+    "nameEn": "Light cream",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170860",
+    "usdaDescription": "Cream, whipped, cream topping, pressurized",
+    "nameMk": "Шлаг (спреј)",
+    "nameEn": "Whipped cream, pressurized",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173430",
+    "usdaDescription": "Butter, without salt",
+    "nameMk": "Путер",
+    "nameEn": "Butter, unsalted",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173410",
+    "usdaDescription": "Butter, salted",
+    "nameMk": "Путер, солен",
+    "nameEn": "Butter, salted",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171314",
+    "usdaDescription": "Butter, Clarified butter (ghee)",
+    "nameMk": "Прочистен путер",
+    "nameEn": "Ghee (clarified butter)",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171275",
+    "usdaDescription": "Milk, canned, condensed, sweetened",
+    "nameMk": "Кондензирано млеко",
+    "nameEn": "Sweetened condensed milk",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "173454",
+    "usdaDescription": "Milk, dry, whole, without added vitamin D",
+    "nameMk": "Млеко во прав",
+    "nameEn": "Whole milk powder",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "170877",
+    "usdaDescription": "Milk, dry, nonfat, regular, without added vitamin A and vitamin D",
+    "nameMk": "Обезмастено млеко во прав",
+    "nameEn": "Skim milk powder",
+    "group": "Dairy and eggs"
+  },
+  {
+    "fdcId": "171077",
+    "usdaDescription": "Chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",
+    "nameMk": "Пилешки гради",
+    "nameEn": "Chicken breast, skinless",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171474",
+    "usdaDescription": "Chicken, broilers or fryers, breast, meat and skin, raw",
+    "nameMk": "Пилешки гради со кожа",
+    "nameEn": "Chicken breast, with skin",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "173627",
+    "usdaDescription": "Chicken, broilers or fryers, dark meat, thigh, meat only, raw",
+    "nameMk": "Пилешки колкови (без кожа)",
+    "nameEn": "Chicken thigh, skinless",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172385",
+    "usdaDescription": "Chicken, broilers or fryers, thigh, meat and skin, raw",
+    "nameMk": "Пилешки колкови (со кожа)",
+    "nameEn": "Chicken thigh, with skin",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "173614",
+    "usdaDescription": "Chicken, broilers or fryers, dark meat, drumstick, meat only, raw",
+    "nameMk": "Пилешки батаци (без кожа)",
+    "nameEn": "Chicken drumstick, skinless",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172373",
+    "usdaDescription": "Chicken, broilers or fryers, drumstick, meat and skin, raw",
+    "nameMk": "Пилешки батаци (со кожа)",
+    "nameEn": "Chicken drumstick, with skin",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172390",
+    "usdaDescription": "Chicken, broilers or fryers, wing, meat and skin, raw",
+    "nameMk": "Пилешки крилца",
+    "nameEn": "Chicken wings",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171447",
+    "usdaDescription": "Chicken, broilers or fryers, meat and skin, raw",
+    "nameMk": "Пилешко месо (цело, со кожа)",
+    "nameEn": "Whole chicken, with skin",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171052",
+    "usdaDescription": "Chicken, broilers or fryers, meat only, raw",
+    "nameMk": "Пилешко месо (без кожа)",
+    "nameEn": "Chicken meat, skinless",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171116",
+    "usdaDescription": "Chicken, ground, raw",
+    "nameMk": "Мелено пилешко месо",
+    "nameEn": "Ground chicken",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171060",
+    "usdaDescription": "Chicken, liver, all classes, raw",
+    "nameMk": "Пилешки црн дроб",
+    "nameEn": "Chicken liver",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171458",
+    "usdaDescription": "Chicken, heart, all classes, raw",
+    "nameMk": "Пилешки срца",
+    "nameEn": "Chicken hearts",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171477",
+    "usdaDescription": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+    "nameMk": "Пилешки гради, печени",
+    "nameEn": "Chicken breast, roasted",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172388",
+    "usdaDescription": "Chicken, broilers or fryers, thigh, meat only, cooked, roasted",
+    "nameMk": "Пилешки колкови, печени",
+    "nameEn": "Chicken thigh, roasted",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "173630",
+    "usdaDescription": "Chicken, broilers or fryers, wing, meat and skin, cooked, roasted",
+    "nameMk": "Пилешки крилца, печени",
+    "nameEn": "Chicken wings, roasted",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171450",
+    "usdaDescription": "Chicken, broilers or fryers, meat and skin, cooked, roasted",
+    "nameMk": "Пилешко, печено (со кожа)",
+    "nameEn": "Roast chicken, with skin",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "174491",
+    "usdaDescription": "Chicken, liver, all classes, cooked, pan-fried",
+    "nameMk": "Пилешки црн дроб, пржен",
+    "nameEn": "Chicken liver, pan-fried",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "174515",
+    "usdaDescription": "Turkey, retail parts, breast, meat only, raw",
+    "nameMk": "Мисиркини гради",
+    "nameEn": "Turkey breast",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "174518",
+    "usdaDescription": "Turkey, retail parts, thigh, meat only, raw",
+    "nameMk": "Мисиркини колкови",
+    "nameEn": "Turkey thigh",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "171505",
+    "usdaDescription": "Turkey, Ground, raw",
+    "nameMk": "Мелено мисиркино месо",
+    "nameEn": "Ground turkey",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172410",
+    "usdaDescription": "Duck, domesticated, meat only, raw",
+    "nameMk": "Патка (без кожа)",
+    "nameEn": "Duck, skinless",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172408",
+    "usdaDescription": "Duck, domesticated, meat and skin, raw",
+    "nameMk": "Патка (со кожа)",
+    "nameEn": "Duck, with skin",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "172413",
+    "usdaDescription": "Goose, domesticated, meat only, raw",
+    "nameMk": "Гуска",
+    "nameEn": "Goose",
+    "group": "Poultry"
+  },
+  {
+    "fdcId": "167902",
+    "usdaDescription": "Pork, fresh, ground, raw",
+    "nameMk": "Мелено свинско месо",
+    "nameEn": "Ground pork",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "168312",
+    "usdaDescription": "Pork, fresh, loin, tenderloin, separable lean and fat, raw",
+    "nameMk": "Свинско филе",
+    "nameEn": "Pork tenderloin",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "2646168",
+    "usdaDescription": "Pork, loin, boneless, raw",
+    "nameMk": "Свинско каре (без коска)",
+    "nameEn": "Pork loin, boneless",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "2727575",
+    "usdaDescription": "Pork, chop, center cut, raw",
+    "nameMk": "Свински котлет",
+    "nameEn": "Pork chop",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "167843",
+    "usdaDescription": "Pork, fresh, shoulder, whole, separable lean and fat, raw",
+    "nameMk": "Свинска плешка",
+    "nameEn": "Pork shoulder",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "168222",
+    "usdaDescription": "Pork, fresh, leg (ham), whole, separable lean and fat, raw",
+    "nameMk": "Свински бут",
+    "nameEn": "Pork leg (ham), fresh",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "167812",
+    "usdaDescription": "Pork, fresh, belly, raw",
+    "nameMk": "Свински стомак (панцета)",
+    "nameEn": "Pork belly",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "168299",
+    "usdaDescription": "Pork, fresh, backribs, separable lean and fat, raw",
+    "nameMk": "Свински ребра",
+    "nameEn": "Pork ribs",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "167862",
+    "usdaDescription": "Pork, fresh, variety meats and by-products, liver, raw",
+    "nameMk": "Свински црн дроб",
+    "nameEn": "Pork liver",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "168277",
+    "usdaDescription": "Pork, cured, bacon, unprepared",
+    "nameMk": "Сланина (бекон)",
+    "nameEn": "Bacon",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "167914",
+    "usdaDescription": "Pork, cured, bacon, cooked, baked",
+    "nameMk": "Сланина, печена",
+    "nameEn": "Bacon, cooked",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "167905",
+    "usdaDescription": "Pork, fresh, loin, tenderloin, separable lean and fat, cooked, roasted",
+    "nameMk": "Свинско филе, печено",
+    "nameEn": "Pork tenderloin, roasted",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "167903",
+    "usdaDescription": "Pork, fresh, ground, cooked",
+    "nameMk": "Мелено свинско, печено",
+    "nameEn": "Ground pork, cooked",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "173864",
+    "usdaDescription": "Ham, sliced, regular (approximately 11% fat)",
+    "nameMk": "Шунка (нарезок)",
+    "nameEn": "Sliced ham",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "171401",
+    "usdaDescription": "Lard",
+    "nameMk": "Свинска маст",
+    "nameEn": "Lard",
+    "group": "Pork"
+  },
+  {
+    "fdcId": "174036",
+    "usdaDescription": "Beef, ground, 80% lean meat / 20% fat, raw",
+    "nameMk": "Мелено говедско (80/20)",
+    "nameEn": "Ground beef (80/20)",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "171796",
+    "usdaDescription": "Beef, ground, 85% lean meat / 15% fat, raw (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Мелено говедско (85/15)",
+    "nameEn": "Ground beef (85/15)",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "174030",
+    "usdaDescription": "Beef, ground, 90% lean meat / 10% fat, raw",
+    "nameMk": "Мелено говедско (90/10)",
+    "nameEn": "Ground beef (90/10)",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "173988",
+    "usdaDescription": "Beef, loin, tenderloin steak, boneless, separable lean and fat, trimmed to 0\" fat, all grades, raw",
+    "nameMk": "Говедско филе (бифтек)",
+    "nameEn": "Beef tenderloin steak",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "171206",
+    "usdaDescription": "Beef, chuck for stew, separable lean and fat, all grades, raw",
+    "nameMk": "Говедско месо за готвење",
+    "nameEn": "Beef stewing meat (chuck)",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "171743",
+    "usdaDescription": "Beef, round, top round steak, boneless, separable lean and fat, trimmed to 0\" fat, all grades, raw",
+    "nameMk": "Говедски бут",
+    "nameEn": "Beef round (top round)",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "168714",
+    "usdaDescription": "Beef, brisket, flat half, boneless, separable lean and fat, trimmed to 0\" fat, all grades, raw",
+    "nameMk": "Говедски гради",
+    "nameEn": "Beef brisket",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172169",
+    "usdaDescription": "Beef, rib, back ribs, bone-in, separable lean and fat, trimmed to 0\" fat, all grades, raw",
+    "nameMk": "Говедски ребра",
+    "nameEn": "Beef ribs",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "169451",
+    "usdaDescription": "Beef, variety meats and by-products, liver, raw",
+    "nameMk": "Говедски црн дроб",
+    "nameEn": "Beef liver",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "171798",
+    "usdaDescription": "Beef, ground, 80% lean meat / 20% fat, patty, cooked, pan-broiled",
+    "nameMk": "Мелено говедско, печено",
+    "nameEn": "Ground beef, cooked",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "175290",
+    "usdaDescription": "Veal, ground, raw",
+    "nameMk": "Мелено телешко месо",
+    "nameEn": "Ground veal",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "175268",
+    "usdaDescription": "Veal, leg (top round), separable lean and fat, raw",
+    "nameMk": "Телешко месо (бут)",
+    "nameEn": "Veal leg",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "175277",
+    "usdaDescription": "Veal, shoulder, whole (arm and blade), separable lean and fat, raw",
+    "nameMk": "Телешка плешка",
+    "nameEn": "Veal shoulder",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "173815",
+    "usdaDescription": "Veal, composite of trimmed retail cuts, separable lean and fat, raw",
+    "nameMk": "Телешко месо",
+    "nameEn": "Veal, mixed cuts",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172534",
+    "usdaDescription": "Veal, variety meats and by-products, liver, raw",
+    "nameMk": "Телешки црн дроб",
+    "nameEn": "Veal liver",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "174370",
+    "usdaDescription": "Lamb, ground, raw",
+    "nameMk": "Мелено јагнешко месо",
+    "nameEn": "Ground lamb",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "174311",
+    "usdaDescription": "Lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4\" fat, choice, raw",
+    "nameMk": "Јагнешки бут",
+    "nameEn": "Lamb leg",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172496",
+    "usdaDescription": "Lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4\" fat, choice, raw",
+    "nameMk": "Јагнешка плешка",
+    "nameEn": "Lamb shoulder",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172479",
+    "usdaDescription": "Lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4\" fat, choice, raw",
+    "nameMk": "Јагнешко месо",
+    "nameEn": "Lamb, mixed cuts",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "174321",
+    "usdaDescription": "Lamb, rib, separable lean and fat, trimmed to 1/4\" fat, choice, raw",
+    "nameMk": "Јагнешки ребра",
+    "nameEn": "Lamb ribs",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172531",
+    "usdaDescription": "Lamb, variety meats and by-products, liver, raw",
+    "nameMk": "Јагнешки црн дроб",
+    "nameEn": "Lamb liver",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172544",
+    "usdaDescription": "Lamb, ground, cooked, broiled",
+    "nameMk": "Мелено јагнешко, печено",
+    "nameEn": "Ground lamb, cooked",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "172521",
+    "usdaDescription": "Game meat, rabbit, domesticated, composite of cuts, raw",
+    "nameMk": "Зајак",
+    "nameEn": "Rabbit",
+    "group": "Beef, veal, lamb"
+  },
+  {
+    "fdcId": "171631",
+    "usdaDescription": "Sausage, Italian, pork, mild, raw",
+    "nameMk": "Свински колбас (свеж)",
+    "nameEn": "Fresh pork sausage",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "174578",
+    "usdaDescription": "Pork sausage, link/patty, cooked, pan-fried",
+    "nameMk": "Колбас, пржен",
+    "nameEn": "Pork sausage, pan-fried",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "174577",
+    "usdaDescription": "Polish sausage, pork",
+    "nameMk": "Колбас (димен, свински)",
+    "nameEn": "Smoked pork sausage",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "172968",
+    "usdaDescription": "Frankfurter, meat",
+    "nameMk": "Виршли",
+    "nameEn": "Frankfurters",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "173862",
+    "usdaDescription": "Frankfurter, beef, unheated",
+    "nameMk": "Говедски виршли",
+    "nameEn": "Beef frankfurters",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "171624",
+    "usdaDescription": "Frankfurter, chicken",
+    "nameMk": "Пилешки виршли",
+    "nameEn": "Chicken frankfurters",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "174582",
+    "usdaDescription": "Salami, dry or hard, pork, beef",
+    "nameMk": "Сува салама",
+    "nameEn": "Dry salami",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "172936",
+    "usdaDescription": "Salami, cooked, beef and pork",
+    "nameMk": "Салама (варена)",
+    "nameEn": "Cooked salami",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "172013",
+    "usdaDescription": "Bologna, beef and pork",
+    "nameMk": "Паризер",
+    "nameEn": "Bologna (parizer)",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "173857",
+    "usdaDescription": "Bologna, turkey",
+    "nameMk": "Мисиркин паризер",
+    "nameEn": "Turkey bologna",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "174575",
+    "usdaDescription": "Pepperoni, beef and pork, sliced",
+    "nameMk": "Пеперони",
+    "nameEn": "Pepperoni",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "173859",
+    "usdaDescription": "Sausage, pork, chorizo, link or ground, raw",
+    "nameMk": "Чоризо",
+    "nameEn": "Chorizo",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "173870",
+    "usdaDescription": "Liver sausage, liverwurst, pork",
+    "nameMk": "Паштета од црн дроб",
+    "nameEn": "Liver pâté",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "170204",
+    "usdaDescription": "Beef, cured, pastrami",
+    "nameMk": "Пастрма (говедска)",
+    "nameEn": "Cured beef (pastrma)",
+    "group": "Sausages and cured meat",
+    "note": "USDA pastrami as the closest match for Macedonian cured meat (пастрма)"
+  },
+  {
+    "fdcId": "172927",
+    "usdaDescription": "Pastrami, turkey",
+    "nameMk": "Мисиркина пастрма",
+    "nameEn": "Turkey pastrami",
+    "group": "Sausages and cured meat"
+  },
+  {
+    "fdcId": "173717",
+    "usdaDescription": "Fish, trout, rainbow, farmed, raw",
+    "nameMk": "Пастрмка",
+    "nameEn": "Trout, farmed",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175154",
+    "usdaDescription": "Fish, trout, rainbow, wild, raw",
+    "nameMk": "Пастрмка (дива)",
+    "nameEn": "Trout, wild",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "173718",
+    "usdaDescription": "Fish, trout, rainbow, farmed, cooked, dry heat",
+    "nameMk": "Пастрмка, печена",
+    "nameEn": "Trout, baked",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "171952",
+    "usdaDescription": "Fish, carp, raw",
+    "nameMk": "Крап",
+    "nameEn": "Carp",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174185",
+    "usdaDescription": "Fish, carp, cooked, dry heat",
+    "nameMk": "Крап, печен",
+    "nameEn": "Carp, baked",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175167",
+    "usdaDescription": "Fish, salmon, Atlantic, farmed, raw",
+    "nameMk": "Лосос",
+    "nameEn": "Salmon, farmed",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "173686",
+    "usdaDescription": "Fish, salmon, Atlantic, wild, raw",
+    "nameMk": "Лосос (див)",
+    "nameEn": "Salmon, wild",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175168",
+    "usdaDescription": "Fish, salmon, Atlantic, farmed, cooked, dry heat",
+    "nameMk": "Лосос, печен",
+    "nameEn": "Salmon, baked",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "171955",
+    "usdaDescription": "Fish, cod, Atlantic, raw",
+    "nameMk": "Бакалар",
+    "nameEn": "Cod",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "171956",
+    "usdaDescription": "Fish, cod, Atlantic, cooked, dry heat",
+    "nameMk": "Бакалар, печен",
+    "nameEn": "Cod, baked",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "173713",
+    "usdaDescription": "Fish, whiting, mixed species, raw",
+    "nameMk": "Ослич",
+    "nameEn": "Whiting (hake-like)",
+    "group": "Fish and seafood",
+    "note": "USDA whiting as the closest match for ослич (hake)"
+  },
+  {
+    "fdcId": "175139",
+    "usdaDescription": "Fish, sardine, Atlantic, canned in oil, drained solids with bone",
+    "nameMk": "Сардини во масло",
+    "nameEn": "Sardines in oil, canned",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174182",
+    "usdaDescription": "Fish, anchovy, european, raw",
+    "nameMk": "Инчуни",
+    "nameEn": "Anchovies",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174183",
+    "usdaDescription": "Fish, anchovy, european, canned in oil, drained solids",
+    "nameMk": "Инчуни во масло",
+    "nameEn": "Anchovies in oil",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175119",
+    "usdaDescription": "Fish, mackerel, Atlantic, raw",
+    "nameMk": "Скуша",
+    "nameEn": "Mackerel",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175116",
+    "usdaDescription": "Fish, herring, Atlantic, raw",
+    "nameMk": "Харинга",
+    "nameEn": "Herring",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "173680",
+    "usdaDescription": "Fish, pike, northern, raw",
+    "nameMk": "Штука",
+    "nameEn": "Pike",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175142",
+    "usdaDescription": "Fish, sea bass, mixed species, raw",
+    "nameMk": "Бранцин",
+    "nameEn": "Sea bass",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174196",
+    "usdaDescription": "Fish, flatfish (flounder and sole species), raw",
+    "nameMk": "Морски лист",
+    "nameEn": "Sole (flatfish)",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175176",
+    "usdaDescription": "Fish, tilapia, raw",
+    "nameMk": "Тилапија",
+    "nameEn": "Tilapia",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175159",
+    "usdaDescription": "Fish, tuna, fresh, yellowfin, raw",
+    "nameMk": "Туна (свежа)",
+    "nameEn": "Tuna, fresh",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "173708",
+    "usdaDescription": "Fish, tuna, light, canned in oil, drained solids",
+    "nameMk": "Туна во масло",
+    "nameEn": "Tuna in oil, canned",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "173709",
+    "usdaDescription": "Fish, tuna, light, canned in water, drained solids (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Туна во вода",
+    "nameEn": "Tuna in water, canned",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174210",
+    "usdaDescription": "Crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)",
+    "nameMk": "Ракчиња",
+    "nameEn": "Shrimp",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174223",
+    "usdaDescription": "Mollusks, squid, mixed species, raw",
+    "nameMk": "Лигњи",
+    "nameEn": "Squid",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174218",
+    "usdaDescription": "Mollusks, octopus, common, raw",
+    "nameMk": "Октопод",
+    "nameEn": "Octopus",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174216",
+    "usdaDescription": "Mollusks, mussel, blue, raw",
+    "nameMk": "Мусли (дагњи)",
+    "nameEn": "Mussels",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "174206",
+    "usdaDescription": "Crustaceans, crayfish, mixed species, wild, raw",
+    "nameMk": "Речен рак",
+    "nameEn": "Crayfish",
+    "group": "Fish and seafood"
+  },
+  {
+    "fdcId": "175202",
+    "usdaDescription": "Beans, white, mature seeds, raw",
+    "nameMk": "Бел грав",
+    "nameEn": "White beans, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "175203",
+    "usdaDescription": "Beans, white, mature seeds, cooked, boiled, without salt",
+    "nameMk": "Бел грав, варен",
+    "nameEn": "White beans, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "175204",
+    "usdaDescription": "Beans, white, mature seeds, canned",
+    "nameMk": "Бел грав, конзервиран",
+    "nameEn": "White beans, canned",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173744",
+    "usdaDescription": "Beans, kidney, red, mature seeds, raw",
+    "nameMk": "Црвен грав",
+    "nameEn": "Red kidney beans, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "175194",
+    "usdaDescription": "Beans, kidney, red, mature seeds, cooked, boiled, without salt",
+    "nameMk": "Црвен грав, варен",
+    "nameEn": "Red kidney beans, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "175195",
+    "usdaDescription": "Beans, kidney, red, mature seeds, canned, solids and liquids",
+    "nameMk": "Црвен грав, конзервиран",
+    "nameEn": "Red kidney beans, canned",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "175199",
+    "usdaDescription": "Beans, pinto, mature seeds, raw (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Шарен грав",
+    "nameEn": "Pinto beans, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "175200",
+    "usdaDescription": "Beans, pinto, mature seeds, cooked, boiled, without salt",
+    "nameMk": "Шарен грав, варен",
+    "nameEn": "Pinto beans, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173734",
+    "usdaDescription": "Beans, black, mature seeds, raw",
+    "nameMk": "Црн грав",
+    "nameEn": "Black beans, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173735",
+    "usdaDescription": "Beans, black, mature seeds, cooked, boiled, without salt",
+    "nameMk": "Црн грав, варен",
+    "nameEn": "Black beans, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173756",
+    "usdaDescription": "Chickpeas (garbanzo beans, bengal gram), mature seeds, raw",
+    "nameMk": "Наут",
+    "nameEn": "Chickpeas, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173757",
+    "usdaDescription": "Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",
+    "nameMk": "Наут, варен",
+    "nameEn": "Chickpeas, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173800",
+    "usdaDescription": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids",
+    "nameMk": "Наут, конзервиран",
+    "nameEn": "Chickpeas, canned",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172420",
+    "usdaDescription": "Lentils, raw",
+    "nameMk": "Леќа",
+    "nameEn": "Lentils, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172421",
+    "usdaDescription": "Lentils, mature seeds, cooked, boiled, without salt",
+    "nameMk": "Леќа, варена",
+    "nameEn": "Lentils, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172428",
+    "usdaDescription": "Peas, green, split, mature seeds, raw",
+    "nameMk": "Скршен грашок",
+    "nameEn": "Split peas, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172429",
+    "usdaDescription": "Peas, split, mature seeds, cooked, boiled, without salt",
+    "nameMk": "Скршен грашок, варен",
+    "nameEn": "Split peas, boiled",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "174270",
+    "usdaDescription": "Soybeans, mature seeds, raw",
+    "nameMk": "Соја (зрно)",
+    "nameEn": "Soybeans, dry",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172430",
+    "usdaDescription": "Peanuts, all types, raw",
+    "nameMk": "Кикирики",
+    "nameEn": "Peanuts, raw",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "173806",
+    "usdaDescription": "Peanuts, all types, dry-roasted, without salt",
+    "nameMk": "Кикирики, печен",
+    "nameEn": "Peanuts, roasted",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172470",
+    "usdaDescription": "Peanut butter, smooth style, without salt",
+    "nameMk": "Кикирики путер",
+    "nameEn": "Peanut butter",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "174288",
+    "usdaDescription": "Chickpea flour (besan)",
+    "nameMk": "Брашно од наут",
+    "nameEn": "Chickpea flour",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "172446",
+    "usdaDescription": "Soymilk, original and vanilla, unfortified",
+    "nameMk": "Сојино млеко",
+    "nameEn": "Soy milk",
+    "group": "Legumes"
+  },
+  {
+    "fdcId": "170187",
+    "usdaDescription": "Nuts, walnuts, english",
+    "nameMk": "Ореви",
+    "nameEn": "Walnuts",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170567",
+    "usdaDescription": "Nuts, almonds",
+    "nameMk": "Бадеми",
+    "nameEn": "Almonds",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170568",
+    "usdaDescription": "Nuts, almonds, blanched",
+    "nameMk": "Бадеми, бланширани",
+    "nameEn": "Almonds, blanched",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170581",
+    "usdaDescription": "Nuts, hazelnuts or filberts",
+    "nameMk": "Лешници",
+    "nameEn": "Hazelnuts",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170162",
+    "usdaDescription": "Nuts, cashew nuts, raw",
+    "nameMk": "Индиски ореви (кашу)",
+    "nameEn": "Cashews",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170184",
+    "usdaDescription": "Nuts, pistachio nuts, raw",
+    "nameMk": "Ф'стаци",
+    "nameEn": "Pistachios",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170591",
+    "usdaDescription": "Nuts, pine nuts, dried",
+    "nameMk": "Пињоли",
+    "nameEn": "Pine nuts",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170182",
+    "usdaDescription": "Nuts, pecans",
+    "nameMk": "Пекан",
+    "nameEn": "Pecans",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170178",
+    "usdaDescription": "Nuts, macadamia nuts, raw",
+    "nameMk": "Макадамија",
+    "nameEn": "Macadamia nuts",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170569",
+    "usdaDescription": "Nuts, brazilnuts, dried, unblanched",
+    "nameMk": "Бразилски ореви",
+    "nameEn": "Brazil nuts",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170575",
+    "usdaDescription": "Nuts, chestnuts, european, raw, peeled",
+    "nameMk": "Костени",
+    "nameEn": "Chestnuts",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170190",
+    "usdaDescription": "Nuts, chestnuts, european, roasted",
+    "nameMk": "Костени, печени",
+    "nameEn": "Chestnuts, roasted",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170562",
+    "usdaDescription": "Seeds, sunflower seed kernels, dried",
+    "nameMk": "Семки од сончоглед (лупени)",
+    "nameEn": "Sunflower seeds, shelled",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170563",
+    "usdaDescription": "Seeds, sunflower seed kernels, dry roasted, without salt",
+    "nameMk": "Семки од сончоглед, печени",
+    "nameEn": "Sunflower seeds, roasted",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170556",
+    "usdaDescription": "Seeds, pumpkin and squash seed kernels, dried",
+    "nameMk": "Тиквени семки (лупени)",
+    "nameEn": "Pumpkin seeds, shelled",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170188",
+    "usdaDescription": "Seeds, pumpkin and squash seeds, whole, roasted, without salt",
+    "nameMk": "Тиквени семки, печени",
+    "nameEn": "Pumpkin seeds, roasted",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170150",
+    "usdaDescription": "Seeds, sesame seeds, whole, dried",
+    "nameMk": "Сусам",
+    "nameEn": "Sesame seeds",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "169414",
+    "usdaDescription": "Seeds, flaxseed",
+    "nameMk": "Ленено семе",
+    "nameEn": "Flaxseed",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "170554",
+    "usdaDescription": "Seeds, chia seeds, dried",
+    "nameMk": "Чиа семе",
+    "nameEn": "Chia seeds",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "168604",
+    "usdaDescription": "Seeds, sesame butter, tahini, type of kernels unspecified",
+    "nameMk": "Тахан",
+    "nameEn": "Tahini",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "171330",
+    "usdaDescription": "Spices, poppy seed",
+    "nameMk": "Афион (мак)",
+    "nameEn": "Poppy seeds",
+    "group": "Nuts and seeds"
+  },
+  {
+    "fdcId": "169761",
+    "usdaDescription": "Wheat flour, white, all-purpose, unenriched",
+    "nameMk": "Брашно (бело, тип 400)",
+    "nameEn": "Wheat flour, white",
+    "group": "Grains, flour, pasta",
+    "note": "USDA all-purpose flour; Macedonian type 400 is the closest"
+  },
+  {
+    "fdcId": "168913",
+    "usdaDescription": "Wheat flours, bread, unenriched",
+    "nameMk": "Брашно за леб (тип 500)",
+    "nameEn": "Bread flour",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168893",
+    "usdaDescription": "Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Интегрално брашно",
+    "nameEn": "Whole wheat flour",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168886",
+    "usdaDescription": "Rye flour, medium",
+    "nameMk": "Ржано брашно",
+    "nameEn": "Rye flour",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169697",
+    "usdaDescription": "Cornmeal, whole-grain, yellow",
+    "nameMk": "Пченкарно брашно",
+    "nameEn": "Cornmeal, yellow",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "170290",
+    "usdaDescription": "Corn flour, whole-grain, yellow",
+    "nameMk": "Пченкарно брашно (фино)",
+    "nameEn": "Corn flour, fine",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169698",
+    "usdaDescription": "Cornstarch",
+    "nameMk": "Пченкарен скроб",
+    "nameEn": "Cornstarch",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168933",
+    "usdaDescription": "Semolina, unenriched",
+    "nameMk": "Гриз",
+    "nameEn": "Semolina",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "173916",
+    "usdaDescription": "Cereals, farina, unenriched, dry",
+    "nameMk": "Пченичен гриз (фин)",
+    "nameEn": "Farina (cream of wheat)",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "171654",
+    "usdaDescription": "Cereals, corn grits, white, regular and quick, enriched, dry",
+    "nameMk": "Пченкарен гриз (палента)",
+    "nameEn": "Corn grits (polenta)",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "170284",
+    "usdaDescription": "Barley, pearled, raw",
+    "nameMk": "Јачмен",
+    "nameEn": "Pearl barley",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "170286",
+    "usdaDescription": "Buckwheat",
+    "nameMk": "Хељда",
+    "nameEn": "Buckwheat",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "170687",
+    "usdaDescription": "Buckwheat flour, whole-groat",
+    "nameMk": "Хељдино брашно",
+    "nameEn": "Buckwheat flour",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "170688",
+    "usdaDescription": "Bulgur, dry",
+    "nameMk": "Булгур",
+    "nameEn": "Bulgur",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169699",
+    "usdaDescription": "Couscous, dry",
+    "nameMk": "Кус-кус",
+    "nameEn": "Couscous",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "173904",
+    "usdaDescription": "Cereals, oats, regular and quick, not fortified, dry",
+    "nameMk": "Овесни снегулки",
+    "nameEn": "Rolled oats",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169702",
+    "usdaDescription": "Millet, raw",
+    "nameMk": "Просо",
+    "nameEn": "Millet",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168874",
+    "usdaDescription": "Quinoa, uncooked",
+    "nameMk": "Киноа",
+    "nameEn": "Quinoa",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168884",
+    "usdaDescription": "Rye grain",
+    "nameMk": "'Рж",
+    "nameEn": "Rye grain",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "170288",
+    "usdaDescription": "Corn grain, yellow",
+    "nameMk": "Пченка (зрно)",
+    "nameEn": "Corn kernels, dry",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169745",
+    "usdaDescription": "Spelt, uncooked",
+    "nameMk": "Пир (спелта)",
+    "nameEn": "Spelt",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169756",
+    "usdaDescription": "Rice, white, long-grain, regular, raw, unenriched",
+    "nameMk": "Ориз (бел, долго зрно)",
+    "nameEn": "White rice, long grain",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169757",
+    "usdaDescription": "Rice, white, long-grain, regular, unenriched, cooked without salt",
+    "nameMk": "Ориз, варен",
+    "nameEn": "White rice, cooked",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168931",
+    "usdaDescription": "Rice, white, short-grain, raw, unenriched",
+    "nameMk": "Ориз (округол)",
+    "nameEn": "White rice, short grain",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168932",
+    "usdaDescription": "Rice, white, short-grain, cooked, unenriched",
+    "nameMk": "Ориз (округол), варен",
+    "nameEn": "Short-grain rice, cooked",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169703",
+    "usdaDescription": "Rice, brown, long-grain, raw (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Кафеав ориз",
+    "nameEn": "Brown rice",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169704",
+    "usdaDescription": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Кафеав ориз, варен",
+    "nameEn": "Brown rice, cooked",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168927",
+    "usdaDescription": "Pasta, dry, unenriched",
+    "nameMk": "Тестенини",
+    "nameEn": "Pasta, dry",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168928",
+    "usdaDescription": "Pasta, cooked, unenriched, without added salt",
+    "nameMk": "Тестенини, варени",
+    "nameEn": "Pasta, cooked",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169738",
+    "usdaDescription": "Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Интегрални тестенини",
+    "nameEn": "Whole-wheat pasta, dry",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168910",
+    "usdaDescription": "Pasta, whole-wheat, cooked (Includes foods for USDA's Food Distribution Program)",
+    "nameMk": "Интегрални тестенини, варени",
+    "nameEn": "Whole-wheat pasta, cooked",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169731",
+    "usdaDescription": "Noodles, egg, dry, enriched",
+    "nameMk": "Јајчени тестенини",
+    "nameEn": "Egg noodles, dry",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "168926",
+    "usdaDescription": "Noodles, egg, unenriched, cooked, without added salt",
+    "nameMk": "Јајчени тестенини, варени",
+    "nameEn": "Egg noodles, cooked",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "169742",
+    "usdaDescription": "Rice noodles, dry",
+    "nameMk": "Оризови тестенини",
+    "nameEn": "Rice noodles, dry",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "171646",
+    "usdaDescription": "Cereals ready-to-eat, granola, homemade",
+    "nameMk": "Гранола",
+    "nameEn": "Granola",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "174648",
+    "usdaDescription": "Cereals ready-to-eat, RALSTON Corn Flakes",
+    "nameMk": "Корнфлекс",
+    "nameEn": "Corn flakes",
+    "group": "Grains, flour, pasta"
+  },
+  {
+    "fdcId": "174924",
+    "usdaDescription": "Bread, white, commercially prepared (includes soft bread crumbs)",
+    "nameMk": "Бел леб",
+    "nameEn": "White bread",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172688",
+    "usdaDescription": "Bread, whole-wheat, commercially prepared",
+    "nameMk": "Интегрален леб",
+    "nameEn": "Whole wheat bread",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172684",
+    "usdaDescription": "Bread, rye",
+    "nameMk": "Ржан леб",
+    "nameEn": "Rye bread",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "168013",
+    "usdaDescription": "Bread, multi-grain (includes whole-grain)",
+    "nameMk": "Повеќезрнест леб",
+    "nameEn": "Multigrain bread",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172675",
+    "usdaDescription": "Bread, french or vienna (includes sourdough)",
+    "nameMk": "Француски леб (багет)",
+    "nameEn": "French bread (baguette)",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "174915",
+    "usdaDescription": "Bread, pita, white, enriched",
+    "nameMk": "Лепче (пита)",
+    "nameEn": "Pita bread",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172793",
+    "usdaDescription": "Rolls, dinner, plain, commercially prepared (includes brown-and-serve)",
+    "nameMk": "Земичка",
+    "nameEn": "Bread roll",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172796",
+    "usdaDescription": "Rolls, hamburger or hotdog, plain",
+    "nameMk": "Лепче за хамбургер",
+    "nameEn": "Hamburger bun",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172791",
+    "usdaDescription": "Phyllo dough",
+    "nameMk": "Кори (фило)",
+    "nameEn": "Phyllo pastry sheets",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172790",
+    "usdaDescription": "Puff pastry, frozen, ready-to-bake",
+    "nameMk": "Лиснато тесто",
+    "nameEn": "Puff pastry",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "174928",
+    "usdaDescription": "Bread, crumbs, dry, grated, plain",
+    "nameMk": "Презла",
+    "nameEn": "Breadcrumbs",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172746",
+    "usdaDescription": "Crackers, saltines (includes oyster, soda, soup)",
+    "nameMk": "Крекери (солени)",
+    "nameEn": "Saltine crackers",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "174987",
+    "usdaDescription": "Croissants, butter",
+    "nameMk": "Кроасан",
+    "nameEn": "Croissant",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "175036",
+    "usdaDescription": "Tortillas, ready-to-bake or -fry, corn",
+    "nameMk": "Пченкарна тортиља",
+    "nameEn": "Corn tortilla",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "173242",
+    "usdaDescription": "Tortillas, ready-to-bake or -fry, flour, without added calcium",
+    "nameMk": "Тортиља",
+    "nameEn": "Flour tortilla",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172751",
+    "usdaDescription": "Croutons, plain",
+    "nameMk": "Крутони",
+    "nameEn": "Croutons",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "175043",
+    "usdaDescription": "Leavening agents, yeast, baker's, active dry",
+    "nameMk": "Сув квасец",
+    "nameEn": "Dry yeast",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "175042",
+    "usdaDescription": "Leavening agents, yeast, baker's, compressed",
+    "nameMk": "Свеж квасец",
+    "nameEn": "Fresh yeast",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172804",
+    "usdaDescription": "Leavening agents, baking powder, double-acting, straight phosphate",
+    "nameMk": "Прашок за пециво",
+    "nameEn": "Baking powder",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "175040",
+    "usdaDescription": "Leavening agents, baking soda",
+    "nameMk": "Сода бикарбона",
+    "nameEn": "Baking soda",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172707",
+    "usdaDescription": "Cake, sponge, prepared from recipe",
+    "nameMk": "Пандишпан",
+    "nameEn": "Sponge cake",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "174950",
+    "usdaDescription": "Cookies, butter, commercially prepared, enriched",
+    "nameMk": "Бисквити (путер)",
+    "nameEn": "Butter biscuits",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172716",
+    "usdaDescription": "Cookies, chocolate chip, commercially prepared, regular, higher fat, enriched",
+    "nameMk": "Колачиња со чоколадо",
+    "nameEn": "Chocolate chip cookies",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "172725",
+    "usdaDescription": "Cookies, oatmeal, commercially prepared, regular",
+    "nameMk": "Овесни колачиња",
+    "nameEn": "Oatmeal cookies",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "174990",
+    "usdaDescription": "Doughnuts, cake-type, plain (includes unsugared, old-fashioned)",
+    "nameMk": "Крофна",
+    "nameEn": "Doughnut",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "175032",
+    "usdaDescription": "Strudel, apple",
+    "nameMk": "Штрудла со јаболка",
+    "nameEn": "Apple strudel",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "175009",
+    "usdaDescription": "Pancakes, plain, prepared from recipe",
+    "nameMk": "Палачинки",
+    "nameEn": "Pancakes",
+    "group": "Bread and baked goods",
+    "note": "USDA American pancakes; thin Macedonian crêpes are similar per 100 g"
+  },
+  {
+    "fdcId": "172765",
+    "usdaDescription": "Muffins, blueberry, commercially prepared (Includes mini-muffins)",
+    "nameMk": "Мафин",
+    "nameEn": "Muffin (blueberry)",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "167555",
+    "usdaDescription": "Snacks, pretzels, hard, plain, salted",
+    "nameMk": "Солени стапчиња",
+    "nameEn": "Pretzel sticks",
+    "group": "Bread and baked goods"
+  },
+  {
+    "fdcId": "171025",
+    "usdaDescription": "Oil, sunflower, linoleic, (approx. 65%)",
+    "nameMk": "Сончогледово масло",
+    "nameEn": "Sunflower oil",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "171413",
+    "usdaDescription": "Oil, olive, salad or cooking",
+    "nameMk": "Маслиново масло",
+    "nameEn": "Olive oil",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "172336",
+    "usdaDescription": "Oil, canola",
+    "nameMk": "Масло од репка",
+    "nameEn": "Canola oil",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "171029",
+    "usdaDescription": "Oil, corn, industrial and retail, all purpose salad or cooking",
+    "nameMk": "Пченкарно масло",
+    "nameEn": "Corn oil",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "171412",
+    "usdaDescription": "Oil, coconut",
+    "nameMk": "Кокосово масло",
+    "nameEn": "Coconut oil",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "171016",
+    "usdaDescription": "Oil, sesame, salad or cooking",
+    "nameMk": "Сусамово масло",
+    "nameEn": "Sesame oil",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "171400",
+    "usdaDescription": "Fat, beef tallow",
+    "nameMk": "Говедски лој",
+    "nameEn": "Beef tallow",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "173585",
+    "usdaDescription": "Margarine, regular, 80% fat, composite, stick, without salt",
+    "nameMk": "Маргарин",
+    "nameEn": "Margarine",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "171009",
+    "usdaDescription": "Salad dressing, mayonnaise, regular",
+    "nameMk": "Мајонез",
+    "nameEn": "Mayonnaise",
+    "group": "Oils and fats"
+  },
+  {
+    "fdcId": "173468",
+    "usdaDescription": "Salt, table",
+    "nameMk": "Сол",
+    "nameEn": "Salt",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170931",
+    "usdaDescription": "Spices, pepper, black",
+    "nameMk": "Црн пипер",
+    "nameEn": "Black pepper",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170933",
+    "usdaDescription": "Spices, pepper, white",
+    "nameMk": "Бел пипер",
+    "nameEn": "White pepper",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171329",
+    "usdaDescription": "Spices, paprika",
+    "nameMk": "Алева пиперка (слатка)",
+    "nameEn": "Paprika, sweet",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170932",
+    "usdaDescription": "Spices, pepper, red or cayenne",
+    "nameMk": "Лута црвена пиперка (мелена)",
+    "nameEn": "Cayenne pepper",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171319",
+    "usdaDescription": "Spices, chili powder",
+    "nameMk": "Чили во прав",
+    "nameEn": "Chili powder",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171328",
+    "usdaDescription": "Spices, oregano, dried",
+    "nameMk": "Оригано",
+    "nameEn": "Oregano, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170938",
+    "usdaDescription": "Spices, thyme, dried",
+    "nameMk": "Мајчина душица (сушена)",
+    "nameEn": "Thyme, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171333",
+    "usdaDescription": "Spices, rosemary, dried",
+    "nameMk": "Рузмарин (сушен)",
+    "nameEn": "Rosemary, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170917",
+    "usdaDescription": "Spices, bay leaf",
+    "nameMk": "Ловоров лист",
+    "nameEn": "Bay leaf",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171317",
+    "usdaDescription": "Spices, basil, dried",
+    "nameMk": "Босилек (сушен)",
+    "nameEn": "Basil, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170930",
+    "usdaDescription": "Spices, parsley, dried",
+    "nameMk": "Магдонос (сушен)",
+    "nameEn": "Parsley, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171322",
+    "usdaDescription": "Spices, dill weed, dried",
+    "nameMk": "Копар (сушен)",
+    "nameEn": "Dill, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "172239",
+    "usdaDescription": "Spearmint, dried",
+    "nameMk": "Нане (сушено)",
+    "nameEn": "Mint, dried",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170936",
+    "usdaDescription": "Spices, savory, ground",
+    "nameMk": "Чубрица",
+    "nameEn": "Savory",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170935",
+    "usdaDescription": "Spices, sage, ground",
+    "nameMk": "Жалфија",
+    "nameEn": "Sage",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170928",
+    "usdaDescription": "Spices, marjoram, dried",
+    "nameMk": "Мајоран",
+    "nameEn": "Marjoram",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171320",
+    "usdaDescription": "Spices, cinnamon, ground",
+    "nameMk": "Цимет",
+    "nameEn": "Cinnamon",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171321",
+    "usdaDescription": "Spices, cloves, ground",
+    "nameMk": "Каранфилче",
+    "nameEn": "Cloves",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171326",
+    "usdaDescription": "Spices, nutmeg, ground",
+    "nameMk": "Морско оревче",
+    "nameEn": "Nutmeg",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170923",
+    "usdaDescription": "Spices, cumin seed",
+    "nameMk": "Кумин",
+    "nameEn": "Cumin",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170918",
+    "usdaDescription": "Spices, caraway seed",
+    "nameMk": "Ким",
+    "nameEn": "Caraway seeds",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170922",
+    "usdaDescription": "Spices, coriander seed",
+    "nameMk": "Коријандер (семе)",
+    "nameEn": "Coriander seeds",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171323",
+    "usdaDescription": "Spices, fennel seed",
+    "nameMk": "Семе од морач",
+    "nameEn": "Fennel seeds",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171316",
+    "usdaDescription": "Spices, anise seed",
+    "nameMk": "Анасон",
+    "nameEn": "Anise seeds",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171324",
+    "usdaDescription": "Spices, fenugreek seed",
+    "nameMk": "Сминдух",
+    "nameEn": "Fenugreek seeds",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170924",
+    "usdaDescription": "Spices, curry powder",
+    "nameMk": "Кари",
+    "nameEn": "Curry powder",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171325",
+    "usdaDescription": "Spices, garlic powder",
+    "nameMk": "Лук во прав",
+    "nameEn": "Garlic powder",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171327",
+    "usdaDescription": "Spices, onion powder",
+    "nameMk": "Кромид во прав",
+    "nameEn": "Onion powder",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170926",
+    "usdaDescription": "Spices, ginger, ground",
+    "nameMk": "Ѓумбир (мелен)",
+    "nameEn": "Ginger, ground",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "172231",
+    "usdaDescription": "Spices, turmeric, ground",
+    "nameMk": "Куркума",
+    "nameEn": "Turmeric",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171315",
+    "usdaDescription": "Spices, allspice, ground",
+    "nameMk": "Пиперче (јамајски пипер)",
+    "nameEn": "Allspice",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170919",
+    "usdaDescription": "Spices, cardamom",
+    "nameMk": "Кардамон",
+    "nameEn": "Cardamom",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "170934",
+    "usdaDescription": "Spices, saffron",
+    "nameMk": "Шафран",
+    "nameEn": "Saffron",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "173471",
+    "usdaDescription": "Vanilla extract",
+    "nameMk": "Ванила (екстракт)",
+    "nameEn": "Vanilla extract",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "172234",
+    "usdaDescription": "Mustard, prepared, yellow",
+    "nameMk": "Сенф",
+    "nameEn": "Mustard",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "173472",
+    "usdaDescription": "Horseradish, prepared",
+    "nameMk": "Рен",
+    "nameEn": "Horseradish, prepared",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "172237",
+    "usdaDescription": "Vinegar, distilled",
+    "nameMk": "Оцет",
+    "nameEn": "Vinegar",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "173469",
+    "usdaDescription": "Vinegar, cider",
+    "nameMk": "Јаболков оцет",
+    "nameEn": "Apple cider vinegar",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "172240",
+    "usdaDescription": "Vinegar, red wine",
+    "nameMk": "Винов оцет",
+    "nameEn": "Red wine vinegar",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "172241",
+    "usdaDescription": "Vinegar, balsamic",
+    "nameMk": "Балсамико",
+    "nameEn": "Balsamic vinegar",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "168556",
+    "usdaDescription": "Catsup",
+    "nameMk": "Кечап",
+    "nameEn": "Ketchup",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171192",
+    "usdaDescription": "Sauce, pasta, spaghetti/marinara, ready-to-serve",
+    "nameMk": "Сос за шпагети",
+    "nameEn": "Pasta sauce (marinara)",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "171580",
+    "usdaDescription": "Sauce, pesto, ready-to-serve, shelf stable",
+    "nameMk": "Песто",
+    "nameEn": "Pesto",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "174277",
+    "usdaDescription": "Soy sauce made from soy and wheat (shoyu)",
+    "nameMk": "Сос од соја",
+    "nameEn": "Soy sauce",
+    "group": "Spices, herbs and condiments"
+  },
+  {
+    "fdcId": "169655",
+    "usdaDescription": "Sugars, granulated",
+    "nameMk": "Шеќер",
+    "nameEn": "Sugar",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "168833",
+    "usdaDescription": "Sugars, brown",
+    "nameMk": "Кафеав шеќер",
+    "nameEn": "Brown sugar",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169656",
+    "usdaDescription": "Sugars, powdered",
+    "nameMk": "Шеќер во прав",
+    "nameEn": "Powdered sugar",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169640",
+    "usdaDescription": "Honey",
+    "nameMk": "Мед",
+    "nameEn": "Honey",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169641",
+    "usdaDescription": "Jams and preserves",
+    "nameMk": "Мармалад (џем)",
+    "nameEn": "Jam",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "170645",
+    "usdaDescription": "Jams and preserves, apricot",
+    "nameMk": "Мармалад од кајсии",
+    "nameEn": "Apricot jam",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169661",
+    "usdaDescription": "Syrups, maple",
+    "nameMk": "Јаворов сируп",
+    "nameEn": "Maple syrup",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "167587",
+    "usdaDescription": "Candies, milk chocolate",
+    "nameMk": "Млечна чоколада",
+    "nameEn": "Milk chocolate",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "168754",
+    "usdaDescription": "Candies, milk chocolate, with almonds",
+    "nameMk": "Млечна чоколада со бадеми",
+    "nameEn": "Milk chocolate with almonds",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "170272",
+    "usdaDescription": "Chocolate, dark, 60-69% cacao solids",
+    "nameMk": "Црна чоколада (60–69%)",
+    "nameEn": "Dark chocolate (60–69%)",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "170273",
+    "usdaDescription": "Chocolate, dark, 70-85% cacao solids",
+    "nameMk": "Црна чоколада (70–85%)",
+    "nameEn": "Dark chocolate (70–85%)",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "167976",
+    "usdaDescription": "Candies, semisweet chocolate",
+    "nameMk": "Чоколада за готвење",
+    "nameEn": "Semisweet baking chocolate",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169593",
+    "usdaDescription": "Cocoa, dry powder, unsweetened",
+    "nameMk": "Какао (во прав)",
+    "nameEn": "Cocoa powder",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "167996",
+    "usdaDescription": "Candies, halavah, plain",
+    "nameMk": "Алва",
+    "nameEn": "Halva (tahini)",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "167990",
+    "usdaDescription": "Candies, hard",
+    "nameMk": "Бонбони",
+    "nameEn": "Hard candy",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "167995",
+    "usdaDescription": "Candies, marshmallows",
+    "nameMk": "Бел слез",
+    "nameEn": "Marshmallows",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "167575",
+    "usdaDescription": "Ice creams, vanilla",
+    "nameMk": "Сладолед (ванила)",
+    "nameEn": "Vanilla ice cream",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "168809",
+    "usdaDescription": "Ice creams, chocolate",
+    "nameMk": "Сладолед (чоколадо)",
+    "nameEn": "Chocolate ice cream",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169599",
+    "usdaDescription": "Gelatins, dry powder, unsweetened",
+    "nameMk": "Желатин",
+    "nameEn": "Gelatin powder",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169609",
+    "usdaDescription": "Puddings, vanilla, dry mix, regular",
+    "nameMk": "Пудинг во прав (ванила)",
+    "nameEn": "Vanilla pudding mix",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "169610",
+    "usdaDescription": "Puddings, vanilla, dry mix, regular, prepared with whole milk",
+    "nameMk": "Пудинг (ванила, со млеко)",
+    "nameEn": "Vanilla pudding, made with milk",
+    "group": "Sweets"
+  },
+  {
+    "fdcId": "173647",
+    "usdaDescription": "Beverages, water, tap, drinking",
+    "nameMk": "Вода",
+    "nameEn": "Water",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "171890",
+    "usdaDescription": "Beverages, coffee, brewed, prepared with tap water",
+    "nameMk": "Кафе (филтер)",
+    "nameEn": "Coffee, brewed",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "171891",
+    "usdaDescription": "Beverages, coffee, brewed, espresso, restaurant-prepared",
+    "nameMk": "Еспресо",
+    "nameEn": "Espresso",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "171893",
+    "usdaDescription": "Beverages, coffee, instant, regular, powder",
+    "nameMk": "Инстант кафе",
+    "nameEn": "Instant coffee, powder",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "173227",
+    "usdaDescription": "Beverages, tea, black, brewed, prepared with tap water",
+    "nameMk": "Црн чај",
+    "nameEn": "Black tea",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174156",
+    "usdaDescription": "Beverages, tea, herb, brewed, chamomile",
+    "nameMk": "Чај од камилица",
+    "nameEn": "Chamomile tea",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "173232",
+    "usdaDescription": "Beverages, tea, herb, other than chamomile, brewed",
+    "nameMk": "Билен чај",
+    "nameEn": "Herbal tea",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174852",
+    "usdaDescription": "Beverages, carbonated, cola, regular",
+    "nameMk": "Газиран сок (кола)",
+    "nameEn": "Cola",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "173205",
+    "usdaDescription": "Beverages, carbonated, lemon-lime soda, no caffeine",
+    "nameMk": "Газиран сок (лимон)",
+    "nameEn": "Lemon-lime soda",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174842",
+    "usdaDescription": "Beverages, carbonated, club soda",
+    "nameMk": "Газирана вода",
+    "nameEn": "Sparkling water",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "168746",
+    "usdaDescription": "Alcoholic beverage, beer, regular, all",
+    "nameMk": "Пиво",
+    "nameEn": "Beer",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "168749",
+    "usdaDescription": "Alcoholic beverage, beer, light",
+    "nameMk": "Лесно пиво",
+    "nameEn": "Light beer",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "173190",
+    "usdaDescription": "Alcoholic beverage, wine, table, red",
+    "nameMk": "Црвено вино",
+    "nameEn": "Red wine",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174837",
+    "usdaDescription": "Alcoholic beverage, wine, table, white",
+    "nameMk": "Бело вино",
+    "nameEn": "White wine",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174815",
+    "usdaDescription": "Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof",
+    "nameMk": "Ракија",
+    "nameEn": "Rakija (40%)",
+    "group": "Beverages",
+    "note": "USDA 80-proof spirits as the approximation for ракија and мастика"
+  },
+  {
+    "fdcId": "174818",
+    "usdaDescription": "Alcoholic beverage, distilled, vodka, 80 proof",
+    "nameMk": "Вотка",
+    "nameEn": "Vodka",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174819",
+    "usdaDescription": "Alcoholic beverage, distilled, whiskey, 86 proof",
+    "nameMk": "Виски",
+    "nameEn": "Whisky",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "173210",
+    "usdaDescription": "Beverages, Energy drink, RED BULL",
+    "nameMk": "Енергетски пијалак",
+    "nameEn": "Energy drink",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174832",
+    "usdaDescription": "Beverages, almond milk, unsweetened, shelf stable",
+    "nameMk": "Бадемово млеко",
+    "nameEn": "Almond milk",
+    "group": "Beverages"
+  },
+  {
+    "fdcId": "174536",
+    "usdaDescription": "Soup, chicken broth, ready-to-serve",
+    "nameMk": "Пилешка супа (бистра)",
+    "nameEn": "Chicken broth",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "172884",
+    "usdaDescription": "Soup, stock, chicken, home-prepared",
+    "nameMk": "Пилешки фонд (домашен)",
+    "nameEn": "Chicken stock, homemade",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "172883",
+    "usdaDescription": "Soup, stock, beef, home-prepared",
+    "nameMk": "Говедски фонд (домашен)",
+    "nameEn": "Beef stock, homemade",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "171563",
+    "usdaDescription": "Soup, chicken broth cubes, dry",
+    "nameMk": "Коцка за супа",
+    "nameEn": "Stock cube (chicken)",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "169677",
+    "usdaDescription": "Snacks, potato chips, plain, salted",
+    "nameMk": "Чипс",
+    "nameEn": "Potato chips",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "167959",
+    "usdaDescription": "Snacks, popcorn, air-popped",
+    "nameMk": "Пуканки",
+    "nameEn": "Popcorn, air-popped",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "170247",
+    "usdaDescription": "Snacks, popcorn, oil-popped, white popcorn, salt added",
+    "nameMk": "Пуканки (со масло)",
+    "nameEn": "Popcorn, oil-popped",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "167558",
+    "usdaDescription": "Snacks, tortilla chips, plain, white corn, salted",
+    "nameMk": "Тортиља чипс",
+    "nameEn": "Tortilla chips",
+    "group": "Soups and snacks"
+  },
+  {
+    "fdcId": "167949",
+    "usdaDescription": "Snacks, corn-based, extruded, puffs or twists, cheese-flavor",
+    "nameMk": "Флипс",
+    "nameEn": "Corn puffs",
+    "group": "Soups and snacks"
+  }
+]

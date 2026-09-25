@@ -1,0 +1,316 @@
+{
+  "$comment": "Seed Macedonian dishes (isEstimate: true). Ingredients reference USDA fdcIds (see translations.mk.json for names). Water added during cooking is not an ingredient: cookedWeightG accounts for water absorbed or evaporated. Amounts are typical home recipes and should be reviewed.",
+  "dishes": [
+    {
+      "slug": "tavce-gravce",
+      "nameMk": "Тавче гравче",
+      "nameEn": "Tavče gravče (baked beans)",
+      "cookedWeightG": 1800,
+      "note": "Dry beans roughly 2.4× their weight after soaking and cooking, plus the sauce.",
+      "ingredients": [
+        { "fdcId": "175202", "grams": 500 },
+        { "fdcId": "170000", "grams": 300 },
+        { "fdcId": "171025", "grams": 80 },
+        { "fdcId": "169761", "grams": 15 },
+        { "fdcId": "171329", "grams": 10 },
+        { "fdcId": "172239", "grams": 3 },
+        { "fdcId": "173468", "grams": 12 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 чинија", "nameEn": "1 plate", "grams": 300 },
+        { "nameMk": "1 тавче", "nameEn": "1 clay dish", "grams": 400 }
+      ]
+    },
+    {
+      "slug": "sarma",
+      "nameMk": "Сарма",
+      "nameEn": "Sarma (stuffed cabbage rolls)",
+      "cookedWeightG": 1900,
+      "note": "Sauerkraut leaves with pork/beef and rice; rice absorbs cooking water.",
+      "ingredients": [
+        { "fdcId": "169279", "grams": 800 },
+        { "fdcId": "167902", "grams": 300 },
+        { "fdcId": "174036", "grams": 200 },
+        { "fdcId": "168931", "grams": 150 },
+        { "fdcId": "170000", "grams": 200 },
+        { "fdcId": "168277", "grams": 100 },
+        { "fdcId": "171025", "grams": 50 },
+        { "fdcId": "171329", "grams": 10 },
+        { "fdcId": "173468", "grams": 5 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 сарма", "nameEn": "1 roll", "grams": 90 },
+        { "nameMk": "1 чинија (4 сарми)", "nameEn": "1 plate (4 rolls)", "grams": 360 }
+      ]
+    },
+    {
+      "slug": "burek-so-meso",
+      "nameMk": "Бурек со месо",
+      "nameEn": "Burek with meat",
+      "cookedWeightG": 1150,
+      "note": "Moisture loss while baking.",
+      "ingredients": [
+        { "fdcId": "172791", "grams": 500 },
+        { "fdcId": "174036", "grams": 300 },
+        { "fdcId": "167902", "grams": 200 },
+        { "fdcId": "170000", "grams": 200 },
+        { "fdcId": "171025", "grams": 150 },
+        { "fdcId": "173468", "grams": 8 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 парче бурек", "nameEn": "1 piece", "grams": 180 },
+        { "nameMk": "1 порција", "nameEn": "1 serving", "grams": 250 }
+      ]
+    },
+    {
+      "slug": "burek-so-sirenje",
+      "nameMk": "Бурек со сирење",
+      "nameEn": "Burek with cheese",
+      "cookedWeightG": 1000,
+      "note": "Moisture loss while baking.",
+      "ingredients": [
+        { "fdcId": "172791", "grams": 500 },
+        { "fdcId": "173420", "grams": 400 },
+        { "fdcId": "171287", "grams": 100 },
+        { "fdcId": "171025", "grams": 150 }
+      ],
+      "portions": [
+        { "nameMk": "1 парче бурек", "nameEn": "1 piece", "grams": 180 },
+        { "nameMk": "1 порција", "nameEn": "1 serving", "grams": 250 }
+      ]
+    },
+    {
+      "slug": "pastrmajlija",
+      "nameMk": "Пастрмајлија",
+      "nameEn": "Pastrmajlija (Štip meat pie)",
+      "cookedWeightG": 1250,
+      "note": "Modern version with fresh pork shoulder. Dough has ~300 g water that is not listed; some evaporates in the oven. Makes about 3 pies.",
+      "ingredients": [
+        { "fdcId": "169761", "grams": 500 },
+        { "fdcId": "175042", "grams": 20 },
+        { "fdcId": "173468", "grams": 10 },
+        { "fdcId": "171025", "grams": 60 },
+        { "fdcId": "167843", "grams": 400 },
+        { "fdcId": "171287", "grams": 100 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 пастрмајлија", "nameEn": "1 whole pie", "grams": 420 },
+        { "nameMk": "1 парче", "nameEn": "1 slice", "grams": 140 }
+      ]
+    },
+    {
+      "slug": "turli-tava",
+      "nameMk": "Турли тава",
+      "nameEn": "Turli tava (baked meat and vegetables)",
+      "cookedWeightG": 2600,
+      "note": "Vegetables lose water while baking; rice absorbs some.",
+      "ingredients": [
+        { "fdcId": "167843", "grams": 500 },
+        { "fdcId": "170026", "grams": 400 },
+        { "fdcId": "169228", "grams": 300 },
+        { "fdcId": "169291", "grams": 300 },
+        { "fdcId": "169961", "grams": 200 },
+        { "fdcId": "169260", "grams": 150 },
+        { "fdcId": "170427", "grams": 200 },
+        { "fdcId": "170457", "grams": 400 },
+        { "fdcId": "170000", "grams": 200 },
+        { "fdcId": "168931", "grams": 80 },
+        { "fdcId": "171025", "grams": 80 },
+        { "fdcId": "171329", "grams": 5 },
+        { "fdcId": "173468", "grams": 12 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 чинија", "nameEn": "1 plate", "grams": 350 }
+      ]
+    },
+    {
+      "slug": "ajvar",
+      "nameMk": "Ајвар",
+      "nameEn": "Ajvar (roasted pepper relish)",
+      "cookedWeightG": 1700,
+      "note": "Peppers lose most of their water while roasting, peeling and simmering.",
+      "ingredients": [
+        { "fdcId": "170108", "grams": 3000 },
+        { "fdcId": "169228", "grams": 500 },
+        { "fdcId": "171025", "grams": 300 },
+        { "fdcId": "169655", "grams": 30 },
+        { "fdcId": "172237", "grams": 50 },
+        { "fdcId": "173468", "grams": 25 }
+      ],
+      "portions": [
+        { "nameMk": "1 лажица", "nameEn": "1 tablespoon", "grams": 20 },
+        { "nameMk": "1 порција", "nameEn": "1 serving", "grams": 50 }
+      ]
+    },
+    {
+      "slug": "pindzur",
+      "nameMk": "Пинџур",
+      "nameEn": "Pinjur (roasted pepper and tomato relish)",
+      "cookedWeightG": 1300,
+      "note": "Roasted peppers and tomatoes lose water.",
+      "ingredients": [
+        { "fdcId": "170108", "grams": 1000 },
+        { "fdcId": "170457", "grams": 600 },
+        { "fdcId": "169228", "grams": 300 },
+        { "fdcId": "169230", "grams": 20 },
+        { "fdcId": "171025", "grams": 100 },
+        { "fdcId": "172237", "grams": 20 },
+        { "fdcId": "173468", "grams": 10 },
+        { "fdcId": "170416", "grams": 10 }
+      ],
+      "portions": [
+        { "nameMk": "1 лажица", "nameEn": "1 tablespoon", "grams": 20 },
+        { "nameMk": "1 порција", "nameEn": "1 serving", "grams": 60 }
+      ]
+    },
+    {
+      "slug": "maznik",
+      "nameMk": "Мазник",
+      "nameEn": "Maznik (coiled cheese pie)",
+      "cookedWeightG": 1400,
+      "note": "Homemade dough with ~280 g water (not listed); some evaporates while baking.",
+      "ingredients": [
+        { "fdcId": "169761", "grams": 500 },
+        { "fdcId": "171025", "grams": 150 },
+        { "fdcId": "173430", "grams": 50 },
+        { "fdcId": "173420", "grams": 400 },
+        { "fdcId": "171287", "grams": 150 },
+        { "fdcId": "171284", "grams": 100 },
+        { "fdcId": "173468", "grams": 8 }
+      ],
+      "portions": [
+        { "nameMk": "1 парче", "nameEn": "1 piece", "grams": 150 }
+      ]
+    },
+    {
+      "slug": "selsko-meso",
+      "nameMk": "Селско месо",
+      "nameEn": "Selsko meso (village-style pork)",
+      "cookedWeightG": 1250,
+      "note": "Meat and mushrooms lose water; wine reduces.",
+      "ingredients": [
+        { "fdcId": "167843", "grams": 600 },
+        { "fdcId": "169251", "grams": 300 },
+        { "fdcId": "170000", "grams": 250 },
+        { "fdcId": "170108", "grams": 200 },
+        { "fdcId": "174837", "grams": 100 },
+        { "fdcId": "171025", "grams": 50 },
+        { "fdcId": "170850", "grams": 100 },
+        { "fdcId": "171329", "grams": 5 },
+        { "fdcId": "173468", "grams": 10 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 тавче", "nameEn": "1 clay dish", "grams": 350 }
+      ]
+    },
+    {
+      "slug": "polneti-piperki",
+      "nameMk": "Полнети пиперки",
+      "nameEn": "Stuffed peppers",
+      "cookedWeightG": 2400,
+      "note": "Rice absorbs the cooking water; about 12 peppers.",
+      "ingredients": [
+        { "fdcId": "169394", "grams": 1000 },
+        { "fdcId": "174036", "grams": 250 },
+        { "fdcId": "167902", "grams": 250 },
+        { "fdcId": "168931", "grams": 150 },
+        { "fdcId": "170000", "grams": 150 },
+        { "fdcId": "170457", "grams": 300 },
+        { "fdcId": "171025", "grams": 50 },
+        { "fdcId": "169761", "grams": 15 },
+        { "fdcId": "171329", "grams": 5 },
+        { "fdcId": "170416", "grams": 10 },
+        { "fdcId": "173468", "grams": 10 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 пиперка", "nameEn": "1 pepper", "grams": 200 },
+        { "nameMk": "1 чинија (2 пиперки)", "nameEn": "1 plate (2 peppers)", "grams": 400 }
+      ]
+    },
+    {
+      "slug": "musaka",
+      "nameMk": "Мусака",
+      "nameEn": "Moussaka (potato)",
+      "cookedWeightG": 2200,
+      "note": "Macedonian potato moussaka with egg and milk topping; moisture loss while baking.",
+      "ingredients": [
+        { "fdcId": "170026", "grams": 1200 },
+        { "fdcId": "174036", "grams": 250 },
+        { "fdcId": "167902", "grams": 250 },
+        { "fdcId": "170000", "grams": 200 },
+        { "fdcId": "171025", "grams": 80 },
+        { "fdcId": "171287", "grams": 150 },
+        { "fdcId": "172217", "grams": 300 },
+        { "fdcId": "169761", "grams": 30 },
+        { "fdcId": "171329", "grams": 5 },
+        { "fdcId": "173468", "grams": 12 },
+        { "fdcId": "170931", "grams": 2 }
+      ],
+      "portions": [
+        { "nameMk": "1 парче", "nameEn": "1 piece", "grams": 300 }
+      ]
+    },
+    {
+      "slug": "sopska-salata",
+      "nameMk": "Шопска салата",
+      "nameEn": "Shopska salad",
+      "cookedWeightG": null,
+      "note": "Not cooked: the raw ingredient weight is used.",
+      "ingredients": [
+        { "fdcId": "170457", "grams": 400 },
+        { "fdcId": "168409", "grams": 300 },
+        { "fdcId": "170427", "grams": 150 },
+        { "fdcId": "170000", "grams": 100 },
+        { "fdcId": "173420", "grams": 150 },
+        { "fdcId": "171025", "grams": 30 },
+        { "fdcId": "172237", "grams": 15 },
+        { "fdcId": "173468", "grams": 5 },
+        { "fdcId": "170416", "grams": 10 }
+      ],
+      "portions": [
+        { "nameMk": "1 чинија", "nameEn": "1 plate", "grams": 300 }
+      ]
+    },
+    {
+      "slug": "mekici",
+      "nameMk": "Мекици",
+      "nameEn": "Mekici (fried dough)",
+      "cookedWeightG": 1050,
+      "note": "The oil amount is what the dough absorbs while frying, not the oil in the pan. Dough has ~100 g water (not listed).",
+      "ingredients": [
+        { "fdcId": "169761", "grams": 500 },
+        { "fdcId": "171284", "grams": 250 },
+        { "fdcId": "171287", "grams": 100 },
+        { "fdcId": "175042", "grams": 20 },
+        { "fdcId": "169655", "grams": 10 },
+        { "fdcId": "173468", "grams": 8 },
+        { "fdcId": "171025", "grams": 150 }
+      ],
+      "portions": [
+        { "nameMk": "1 мекица", "nameEn": "1 piece", "grams": 70 }
+      ]
+    },
+    {
+      "slug": "kacamak",
+      "nameMk": "Качамак",
+      "nameEn": "Kačamak (cornmeal porridge)",
+      "cookedWeightG": 1400,
+      "note": "Cornmeal cooked in about 1.2 l water. Cheese and yogurt served on the side are logged separately.",
+      "ingredients": [
+        { "fdcId": "169697", "grams": 300 },
+        { "fdcId": "173430", "grams": 30 },
+        { "fdcId": "173468", "grams": 8 }
+      ],
+      "portions": [
+        { "nameMk": "1 чинија", "nameEn": "1 plate", "grams": 300 }
+      ]
+    }
+  ]
+}

@@ -41,3 +41,6 @@ example
 # generated native folders
 /ios
 /android
+
+# Seed: raw USDA downloads (rebuilt by npm run seed:download)
+scripts/seed/data/usda/

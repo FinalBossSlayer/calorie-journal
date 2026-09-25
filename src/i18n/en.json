@@ -18,7 +18,10 @@
     "fat": "Fat"
   },
   "database": {
-    "loading": "Opening your journal…",
-    "error": "Could not open the database."
+    "loading": "Loading food database…"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "retry": "Try again"
   }
 }

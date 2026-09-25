@@ -3,25 +3,20 @@
  * Applies the real migration files to Node's built-in SQLite, the same way
  * the Expo migrator does (one statement per breakpoint), and checks the
  * parts Drizzle can't type-check: FTS triggers, constraints, seeded rows.
+ * Uses the same helper as the seed build (scripts/seed/lib/migrate.ts).
  */
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
 import { toSearchKey } from '@/lib/translit';
 
+import { applyMigrations } from '../../scripts/seed/lib/migrate';
 import { DEFAULT_MEAL_IDS } from './defaults';
 import journal from './migrations/meta/_journal.json';
 
 function migratedDb(): DatabaseSync {
   const db = new DatabaseSync(':memory:');
   db.exec('PRAGMA foreign_keys = ON');
-  for (const entry of journal.entries) {
-    const file = readFileSync(join(__dirname, 'migrations', `${entry.tag}.sql`), 'utf8');
-    for (const statement of file.split('--> statement-breakpoint')) {
-      if (statement.trim()) db.exec(statement);
-    }
-  }
+  applyMigrations(db);
   return db;
 }
 
@@ -65,6 +60,11 @@ describe('migrations', () => {
     expect(names).toEqual(
       expect.arrayContaining(['profile', 'foods', 'portions', 'recipeIngredients', 'meals', 'logEntries', 'foods_fts']),
     );
+  });
+
+  it('records every migration like the Expo migrator, so a prebuilt DB is not re-migrated', () => {
+    const rows = db.prepare('SELECT hash, created_at FROM __drizzle_migrations ORDER BY created_at').all();
+    expect(rows).toEqual(journal.entries.map((e) => ({ hash: '', created_at: e.when })));
   });
 
   it('seeds the four default meals in order', () => {
