@@ -1,0 +1,20 @@
+{
+  "tabs": {
+    "today": "Today",
+    "history": "History",
+    "foods": "Foods",
+    "profile": "Profile"
+  },
+  "placeholder": {
+    "comingSoon": "Coming soon",
+    "today": "Your calories and macros for today will show here.",
+    "history": "Your previous days will show here.",
+    "foods": "Search foods and build recipes here.",
+    "profile": "Set your goals here."
+  },
+  "macros": {
+    "protein": "Protein",
+    "carbs": "Carbs",
+    "fat": "Fat"
+  }
+}
