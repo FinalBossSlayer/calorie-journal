@@ -4,6 +4,7 @@ import '@/i18n';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
+import { DatabaseGate } from '@/features/common/DatabaseGate';
 import { useThemeColors } from '@/theme/useThemeColors';
 
 export default function RootLayout() {
@@ -27,7 +28,9 @@ export default function RootLayout() {
   return (
     <ThemeProvider value={navTheme}>
       <StatusBar style="auto" />
-      <Stack screenOptions={{ headerShown: false }} />
+      <DatabaseGate>
+        <Stack screenOptions={{ headerShown: false }} />
+      </DatabaseGate>
     </ThemeProvider>
   );
 }

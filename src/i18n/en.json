@@ -16,5 +16,9 @@
     "protein": "Protein",
     "carbs": "Carbs",
     "fat": "Fat"
+  },
+  "database": {
+    "loading": "Opening your journal…",
+    "error": "Could not open the database."
   }
 }
