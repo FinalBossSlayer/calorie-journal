@@ -1,11 +1,13 @@
 import '../global.css';
-import '@/i18n';
 
 import { DarkTheme, DefaultTheme, type ErrorBoundaryProps, Stack, ThemeProvider } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
+import { useEffect } from 'react';
 
+import { useProfile } from '@/db/queries/profile';
 import { DatabaseGate } from '@/features/common/DatabaseGate';
 import { ErrorScreen } from '@/features/common/ErrorScreen';
+import i18n from '@/i18n';
 import { useThemeColors } from '@/theme/useThemeColors';
 
 // Expo Router renders this instead of the layout when anything below throws,
@@ -36,8 +38,33 @@ export default function RootLayout() {
     <ThemeProvider value={navTheme}>
       <StatusBar style="auto" />
       <DatabaseGate>
-        <Stack screenOptions={{ headerShown: false }} />
+        <AppStack />
       </DatabaseGate>
     </ThemeProvider>
+  );
+}
+
+/** Onboarding until a profile exists, then the tabs. Also keeps the UI language in sync with the profile. */
+function AppStack() {
+  const { profile, loaded } = useProfile();
+  const language = profile?.language;
+
+  useEffect(() => {
+    if (language) void i18n.changeLanguage(language);
+  }, [language]);
+
+  if (!loaded) return null;
+  const hasProfile = profile !== null;
+
+  return (
+    <Stack screenOptions={{ headerShown: false }}>
+      <Stack.Protected guard={hasProfile}>
+        <Stack.Screen name="(tabs)" />
+        <Stack.Screen name="profile-edit" />
+      </Stack.Protected>
+      <Stack.Protected guard={!hasProfile}>
+        <Stack.Screen name="onboarding" />
+      </Stack.Protected>
+    </Stack>
   );
 }

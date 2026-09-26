@@ -9,8 +9,7 @@
     "comingSoon": "Coming soon",
     "today": "Your calories and macros for today will show here.",
     "history": "Your previous days will show here.",
-    "foods": "Search foods and build recipes here.",
-    "profile": "Set your goals here."
+    "foods": "Search foods and build recipes here."
   },
   "macros": {
     "protein": "Protein",
@@ -23,5 +22,135 @@
   "errors": {
     "title": "Something went wrong",
     "retry": "Try again"
+  },
+  "common": {
+    "next": "Next",
+    "back": "Back",
+    "start": "Start",
+    "save": "Save",
+    "cancel": "Cancel",
+    "selectDate": "Select date"
+  },
+  "units": {
+    "kcal": "kcal",
+    "g": "g",
+    "cm": "cm",
+    "kg": "kg"
+  },
+  "nutrients": {
+    "kcal": "Calories",
+    "protein": "Protein",
+    "carbs": "Carbs",
+    "fat": "Fat",
+    "fiber": "Fiber",
+    "sugar": "Sugar",
+    "salt": "Salt"
+  },
+  "targetKind": {
+    "min": "at least",
+    "max": "at most"
+  },
+  "language": {
+    "mk": "Македонски",
+    "en": "English"
+  },
+  "sex": {
+    "male": "Male",
+    "female": "Female"
+  },
+  "activity": {
+    "sedentary": {
+      "title": "Mostly sitting",
+      "description": "Office or desk work, little or no exercise."
+    },
+    "light": {
+      "title": "Lightly active",
+      "description": "On your feet part of the day, or light exercise 1–3 times a week."
+    },
+    "moderate": {
+      "title": "Moderately active",
+      "description": "Exercise 3–5 times a week, or a job with a lot of walking."
+    },
+    "active": {
+      "title": "Very active",
+      "description": "Hard exercise 6–7 times a week, or physical work."
+    },
+    "veryActive": {
+      "title": "Extremely active",
+      "description": "Physical work plus daily training, or training twice a day."
+    }
+  },
+  "goal": {
+    "lose": "Lose weight",
+    "maintain": "Keep my weight",
+    "gain": "Gain weight",
+    "rate": "{{rate, number}} kg per week",
+    "rateLose": "−{{kcal}} kcal a day",
+    "rateGain": "+{{kcal}} kcal a day"
+  },
+  "onboarding": {
+    "stepOf": "Step {{current}} of {{total}}",
+    "language": {
+      "title": "Language",
+      "subtitle": "You can change it later in Profile."
+    },
+    "sex": {
+      "title": "Sex",
+      "subtitle": "Used to estimate how much energy your body needs."
+    },
+    "birthDate": {
+      "title": "Date of birth",
+      "subtitle": "Energy needs change with age.",
+      "error": "Age must be between {{min}} and {{max}} years."
+    },
+    "body": {
+      "title": "Height and weight",
+      "subtitle": "Roughly is fine — you can update your weight later.",
+      "height": "Height",
+      "weight": "Weight",
+      "heightError": "Enter a height between {{min}} and {{max}} cm.",
+      "weightError": "Enter a weight between {{min}} and {{max}} kg."
+    },
+    "activity": {
+      "title": "How active are you?",
+      "subtitle": "Pick what best describes a typical week."
+    },
+    "goal": {
+      "title": "What is your goal?",
+      "rateTitle": "How fast?",
+      "rateHint": "A slower pace is easier to stick to."
+    },
+    "summary": {
+      "title": "Your daily targets",
+      "subtitle": "Calculated from your details. You can adjust them later in Profile."
+    }
+  },
+  "targets": {
+    "perDay": "per day",
+    "clampedTitle": "Target raised to a safe level",
+    "clampedBody": "At the chosen pace your target would be {{kcal}} kcal a day. We don’t suggest less than {{min}} kcal, so it is set to {{min}}. Consider a slower pace.",
+    "custom": "custom value",
+    "belowFloor": "Your calorie target is below {{min}} kcal, the lowest we suggest. Eating this little for long can be unsafe.",
+    "calculated": "Calculated: {{value}}",
+    "reset": "Reset to calculated",
+    "kcalHint": "Fat, carbs, fiber and sugar follow this value unless you set them yourself.",
+    "invalid": "Enter a number between {{min}} and {{max}}."
+  },
+  "profile": {
+    "targetsTitle": "Daily targets",
+    "targetsHint": "Tap a target to set your own value.",
+    "detailsTitle": "Your details",
+    "editProfile": "Edit profile",
+    "age": "Age",
+    "ageYears_one": "{{count}} year",
+    "ageYears_other": "{{count}} years",
+    "activity": "Activity",
+    "goal": "Goal",
+    "settingsTitle": "Settings",
+    "language": "Language",
+    "ringMode": "Today ring shows",
+    "ringEaten": "Calories eaten",
+    "ringLeft": "Calories left",
+    "restartOnboarding": "Restart onboarding (development only)"
   }
 }

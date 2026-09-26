@@ -30,6 +30,11 @@ export const RING_MODES = ['eaten', 'left'] as const;
 export const FOOD_KINDS = ['ingredient', 'dish', 'product', 'recipe'] as const;
 export const FOOD_SOURCES = ['usda', 'seed', 'user'] as const;
 
+export type Sex = (typeof SEXES)[number];
+export type ActivityLevel = (typeof ACTIVITY_LEVELS)[number];
+export type Goal = (typeof GOALS)[number];
+export type RingMode = (typeof RING_MODES)[number];
+
 export type TargetOverrides = Partial<Record<Nutrient, number>>;
 
 const timestamps = {
