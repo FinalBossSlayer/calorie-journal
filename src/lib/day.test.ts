@@ -3,10 +3,8 @@ import {
   nutrientProgress,
   ringValues,
   sumNutrients,
-  targetsForDate,
   type NutrientSnapshot,
 } from './day';
-import type { Targets } from './targets';
 
 function snap(values: Partial<NutrientSnapshot>): NutrientSnapshot {
   return { kcal: 0, protein: 0, carbs: 0, fat: 0, fiber: 0, sugar: 0, salt: 0, ...values };
@@ -122,28 +120,5 @@ describe('ringValues', () => {
   it('shows an unknown value instead of a fake number', () => {
     expect(ringValues(null, 2000, 'eaten').value).toBeNull();
     expect(ringValues(null, 2000, 'left')).toMatchObject({ value: null, label: 'left' });
-  });
-});
-
-describe('targetsForDate', () => {
-  const t = (kcal: number): Targets => ({ kcal, protein: 0, carbs: 0, fat: 0, fiber: 0, sugar: 0, salt: 0 });
-  const history = [
-    { effectiveDate: '2026-09-10', targets: t(2200) },
-    { effectiveDate: '2026-09-01', targets: t(2500) },
-    { effectiveDate: '2026-09-20', targets: t(2000) },
-  ];
-
-  it('uses the latest targets starting on or before the date', () => {
-    expect(targetsForDate(history, '2026-09-15')?.kcal).toBe(2200);
-    expect(targetsForDate(history, '2026-09-20')?.kcal).toBe(2000);
-    expect(targetsForDate(history, '2026-09-26')?.kcal).toBe(2000);
-  });
-
-  it('falls back to the earliest targets for days before the history starts', () => {
-    expect(targetsForDate(history, '2026-08-01')?.kcal).toBe(2500);
-  });
-
-  it('returns null without history', () => {
-    expect(targetsForDate([], '2026-09-26')).toBeNull();
   });
 });

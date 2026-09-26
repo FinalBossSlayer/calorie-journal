@@ -5,7 +5,7 @@
 import type { RingMode } from '@/db/schema';
 
 import { NUTRIENTS, type Nutrient, type NutrientValues } from './nutrition';
-import { TARGET_KIND, type Targets } from './targets';
+import { TARGET_KIND } from './targets';
 
 /** A logged amount: its nutrient snapshot plus which values are lower bounds. */
 export type NutrientSnapshot = NutrientValues & {
@@ -127,26 +127,4 @@ export function ringValues(eatenKcal: number | null, targetKcal: number, mode: R
   return left < 0
     ? { ...progress, value: -left, label: 'over' }
     : { ...progress, value: left, label: 'left' };
-}
-
-export interface TargetHistoryRow {
-  /** 'YYYY-MM-DD': the first day these targets applied. */
-  effectiveDate: string;
-  targets: Targets;
-}
-
-/**
- * Targets in effect on `date`: the latest row starting on or before it. Days
- * before the first row use the first row (the earliest targets we know).
- * Returns null when there is no history at all.
- */
-export function targetsForDate(history: readonly TargetHistoryRow[], date: string): Targets | null {
-  let best: TargetHistoryRow | null = null;
-  let earliest: TargetHistoryRow | null = null;
-  for (const row of history) {
-    // 'YYYY-MM-DD' strings compare correctly as plain strings.
-    if (row.effectiveDate <= date && (!best || row.effectiveDate > best.effectiveDate)) best = row;
-    if (!earliest || row.effectiveDate < earliest.effectiveDate) earliest = row;
-  }
-  return (best ?? earliest)?.targets ?? null;
 }

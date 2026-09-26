@@ -174,3 +174,25 @@ export const logEntries = sqliteTable(
 
 // foods_fts (FTS5 virtual table) is created in a custom migration — Drizzle
 // can't model virtual tables. It is kept in sync with `foods` by triggers.
+
+/**
+ * Daily targets as they were from `effectiveDate` on, so past days keep the
+ * targets that applied back then. One row per day: re-saving the profile the
+ * same day overwrites it. Today's targets are always computed live from the profile.
+ */
+export const targetHistory = sqliteTable(
+  'targetHistory',
+  {
+    id: text().primaryKey(),
+    effectiveDate: text().notNull(), // 'YYYY-MM-DD'
+    kcal: real().notNull(),
+    protein: real().notNull(),
+    carbs: real().notNull(),
+    fat: real().notNull(),
+    fiber: real().notNull(),
+    sugar: real().notNull(),
+    salt: real().notNull(),
+    ...timestamps,
+  },
+  (t) => [uniqueIndex('target_history_date_idx').on(t.effectiveDate)],
+);

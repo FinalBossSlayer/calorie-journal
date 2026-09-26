@@ -159,5 +159,10 @@
     "previousDay": "Previous day",
     "nextDay": "Next day",
     "pickDate": "Pick a date"
+  },
+  "dev": {
+    "addSampleDay": "Add sample day (development only)",
+    "clearDay": "Clear this day (development only)",
+    "dayReadout": "{{count}} entries · {{kcal}} of {{target}} kcal"
   }
 }

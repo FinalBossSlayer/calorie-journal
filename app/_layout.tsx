@@ -4,7 +4,7 @@ import { DarkTheme, DefaultTheme, type ErrorBoundaryProps, Stack, ThemeProvider 
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 
-import { useProfile } from '@/db/queries/profile';
+import { syncActiveProfileTargets, useProfile } from '@/db/queries/profile';
 import { DatabaseGate } from '@/features/common/DatabaseGate';
 import { ErrorScreen } from '@/features/common/ErrorScreen';
 import i18n from '@/i18n';
@@ -52,6 +52,13 @@ function AppStack() {
   useEffect(() => {
     if (language) void i18n.changeLanguage(language);
   }, [language]);
+
+  // Creates the first target-history row for profiles made before it existed,
+  // and picks up target changes that happen without a save (e.g. a birthday).
+  const profileId = profile?.id;
+  useEffect(() => {
+    if (profileId) void syncActiveProfileTargets();
+  }, [profileId]);
 
   if (!loaded) return null;
   const hasProfile = profile !== null;

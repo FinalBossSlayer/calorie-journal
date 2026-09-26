@@ -4,6 +4,7 @@ import { randomUUID } from 'expo-crypto';
 
 import { getDb } from '../client';
 import { profile } from '../schema';
+import { syncTargetHistory } from './targets';
 
 export type Profile = typeof profile.$inferSelect;
 export type ProfileFields = Omit<typeof profile.$inferInsert, 'id' | 'createdAt' | 'updatedAt' | 'deletedAt'>;
@@ -29,10 +30,18 @@ export async function saveProfile(fields: ProfileFields): Promise<void> {
   } else {
     await getDb().insert(profile).values({ id: randomUUID(), ...fields });
   }
+  await syncActiveProfileTargets();
 }
 
 export async function updateProfile(id: string, fields: Partial<ProfileFields>): Promise<void> {
   await getDb().update(profile).set(fields).where(eq(profile.id, id));
+  await syncActiveProfileTargets();
+}
+
+/** Keeps target history in step with the profile. Also run on launch (app/_layout.tsx). */
+export async function syncActiveProfileTargets(): Promise<void> {
+  const [current] = await activeProfileQuery();
+  if (current) await syncTargetHistory(current);
 }
 
 /** Soft-deletes the profile, which sends the app back to onboarding (dev tool). */

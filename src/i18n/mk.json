@@ -159,5 +159,10 @@
     "previousDay": "Претходен ден",
     "nextDay": "Следен ден",
     "pickDate": "Избери датум"
+  },
+  "dev": {
+    "addSampleDay": "Додај примерен ден (само при развој)",
+    "clearDay": "Избриши го денот (само при развој)",
+    "dayReadout": "{{count}} внесови · {{kcal}} од {{target}} kcal"
   }
 }

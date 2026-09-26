@@ -58,7 +58,7 @@ describe('migrations', () => {
       .all()
       .map((row) => row.name);
     expect(names).toEqual(
-      expect.arrayContaining(['profile', 'foods', 'portions', 'recipeIngredients', 'meals', 'logEntries', 'foods_fts']),
+      expect.arrayContaining(['profile', 'foods', 'portions', 'recipeIngredients', 'meals', 'logEntries', 'targetHistory', 'foods_fts']),
     );
   });
 
@@ -134,6 +134,15 @@ describe('migrations', () => {
           )
           .run(),
       ).toThrow(/CHECK constraint failed/);
+    });
+
+    it('allows one target-history row per day', () => {
+      const insert = db.prepare(
+        `INSERT INTO targetHistory (id, effectiveDate, kcal, protein, carbs, fat, fiber, sugar, salt, createdAt, updatedAt)
+         VALUES (?, '2026-09-26', 2000, 100, 250, 67, 28, 50, 5, 0, 0)`,
+      );
+      insert.run('a');
+      expect(() => insert.run('b')).toThrow(/UNIQUE constraint failed/);
     });
   });
 });
