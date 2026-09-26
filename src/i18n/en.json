@@ -6,15 +6,8 @@
     "profile": "Profile"
   },
   "placeholder": {
-    "comingSoon": "Coming soon",
-    "today": "Your calories and macros for today will show here.",
     "history": "Your previous days will show here.",
     "foods": "Search foods and build recipes here."
-  },
-  "macros": {
-    "protein": "Protein",
-    "carbs": "Carbs",
-    "fat": "Fat"
   },
   "database": {
     "loading": "Loading food database…"
@@ -162,7 +155,15 @@
   },
   "dev": {
     "addSampleDay": "Add sample day (development only)",
-    "clearDay": "Clear this day (development only)",
-    "dayReadout": "{{count}} entries · {{kcal}} of {{target}} kcal"
+    "clearDay": "Clear this day (development only)"
+  },
+  "today": {
+    "ringEaten": "kcal eaten",
+    "ringLeft": "kcal left",
+    "ringOver": "kcal over",
+    "ofTarget": "of {{target}} kcal",
+    "nothingLogged": "Nothing logged yet",
+    "addFood": "+ Add food",
+    "incompleteNote": "≥ means some foods have unknown values, so the real amount is higher."
   }
 }
