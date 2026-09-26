@@ -28,6 +28,7 @@ export function currentLanguage(): Language {
 
 // Resources are bundled, so init completes synchronously before the first render.
 // Before onboarding the phone's language is used; after it, the profile's (see app/_layout.tsx).
+// eslint-disable-next-line import/no-named-as-default-member -- the instance's .use(), not the named export
 void i18n.use(initReactI18next).init({
   resources,
   lng: deviceLanguage(),
