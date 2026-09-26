@@ -5,20 +5,14 @@
  * parts Drizzle can't type-check: FTS triggers, constraints, seeded rows.
  * Uses the same helper as the seed build (scripts/seed/lib/migrate.ts).
  */
-import { DatabaseSync } from 'node:sqlite';
+import type { DatabaseSync } from 'node:sqlite';
 
+import { buildSearch } from '@/lib/search';
 import { toSearchKey } from '@/lib/translit';
 
-import { applyMigrations } from '../../scripts/seed/lib/migrate';
 import { DEFAULT_MEAL_IDS } from './defaults';
 import journal from './migrations/meta/_journal.json';
-
-function migratedDb(): DatabaseSync {
-  const db = new DatabaseSync(':memory:');
-  db.exec('PRAGMA foreign_keys = ON');
-  applyMigrations(db);
-  return db;
-}
+import { migratedDb } from './testing';
 
 let now = 1_700_000_000_000;
 
@@ -30,10 +24,8 @@ function insertFood(db: DatabaseSync, id: string, nameMk: string | null, nameEn:
 }
 
 function search(db: DatabaseSync, query: string): string[] {
-  const match = toSearchKey(query)
-    .split(' ')
-    .map((term) => `"${term}"*`)
-    .join(' ');
+  const match = buildSearch(query)?.match;
+  if (match === undefined) return [];
   return db
     .prepare(
       `SELECT f.id FROM foods_fts

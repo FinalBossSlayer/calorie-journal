@@ -1,14 +1,24 @@
-import { and, asc, eq, getTableColumns, inArray, isNull } from 'drizzle-orm';
+import { and, asc, eq, getTableColumns, isNull } from 'drizzle-orm';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { randomUUID } from 'expo-crypto';
 
+import { rescaleSnapshot } from '@/lib/logging';
 import { scaleNutrients } from '@/lib/nutrition';
 
 import { getDb } from '../client';
-import { DEFAULT_MEAL_IDS } from '../defaults';
-import { foods, logEntries, meals, portions } from '../schema';
+import { foods, logEntries, meals } from '../schema';
 
 export type Meal = typeof meals.$inferSelect;
+export type LogEntry = typeof logEntries.$inferSelect;
+type Food = typeof foods.$inferSelect;
+
+/** How much was eaten and where it goes. portionId/quantity are null when typed in grams. */
+export interface EntryAmount {
+  mealId: string;
+  grams: number;
+  portionId: string | null;
+  quantity: number | null;
+}
 
 function dayEntriesQuery(date: string) {
   return getDb()
@@ -27,63 +37,60 @@ export type DayEntry = Awaited<ReturnType<typeof dayEntriesQuery>>[number];
  */
 export function useDayLog(date: string): { entries: DayEntry[]; meals: Meal[]; loaded: boolean } {
   const entries = useLiveQuery(dayEntriesQuery(date), [date]);
-  const mealRows = useLiveQuery(
-    getDb().select().from(meals).where(isNull(meals.deletedAt)).orderBy(asc(meals.sortOrder)),
-  );
+  const mealRows = useMeals();
   return {
     entries: entries.data,
-    meals: mealRows.data,
-    loaded: entries.updatedAt !== undefined && mealRows.updatedAt !== undefined,
+    meals: mealRows.meals,
+    loaded: entries.updatedAt !== undefined && mealRows.loaded,
   };
 }
 
-// --- Dev tools (until food logging exists) --------------------------------
-
-/** Seed dishes (by English name) plus a USDA food with unknown fiber to show incomplete totals. */
-const SAMPLE_DAY = [
-  { meal: DEFAULT_MEAL_IDS.breakfast, food: 'Burek with cheese', portion: '1 piece' },
-  { meal: DEFAULT_MEAL_IDS.lunch, food: 'Tavče gravče (baked beans)', portion: '1 plate' },
-  { meal: DEFAULT_MEAL_IDS.lunch, food: 'Shopska salad', portion: '1 plate' },
-  { meal: DEFAULT_MEAL_IDS.dinner, food: 'Sarma (stuffed cabbage rolls)', portion: '1 plate (4 rolls)' },
-  { meal: DEFAULT_MEAL_IDS.snacks, food: 'Quince', grams: 150 },
-] as const;
-
-/** DEV ONLY: logs a realistic day of seed foods on `date`, as if entered by hand. */
-export async function addSampleDay(date: string): Promise<void> {
-  const db = getDb();
-  const names = SAMPLE_DAY.map((s) => s.food);
-  const foodRows = await db
-    .select()
-    .from(foods)
-    .where(and(inArray(foods.nameEn, names), isNull(foods.deletedAt)));
-  const portionRows = await db
-    .select()
-    .from(portions)
-    .where(inArray(portions.foodId, foodRows.map((f) => f.id)));
-
-  for (const item of SAMPLE_DAY) {
-    const food = foodRows.find((f) => f.nameEn === item.food);
-    if (!food) continue; // seed data changed; skip rather than fail a dev tool
-    const portion = 'portion' in item ? portionRows.find((p) => p.foodId === food.id && p.nameEn === item.portion) : undefined;
-    const grams = portion?.grams ?? ('grams' in item ? item.grams : 100);
-    await db.insert(logEntries).values({
-      id: randomUUID(),
-      date,
-      mealId: item.meal,
-      foodId: food.id,
-      grams,
-      portionId: portion?.id ?? null,
-      quantity: portion ? 1 : null,
-      ...scaleNutrients(food, grams),
-      incompleteNutrients: food.incompleteNutrients,
-    });
-  }
+/** All meals in order, including hidden ones, live. */
+export function useMeals(): { meals: Meal[]; loaded: boolean } {
+  const { data, updatedAt } = useLiveQuery(
+    getDb().select().from(meals).where(isNull(meals.deletedAt)).orderBy(asc(meals.sortOrder)),
+  );
+  return { meals: data, loaded: updatedAt !== undefined };
 }
 
-/** DEV ONLY: soft-deletes every entry on `date`. */
-export async function clearDay(date: string): Promise<void> {
+/** One entry for editing, live. null while loading, or if it doesn't exist or was deleted. */
+export function useEntry(id: string): { entry: LogEntry | null; loaded: boolean } {
+  const { data, updatedAt } = useLiveQuery(
+    getDb()
+      .select()
+      .from(logEntries)
+      .where(and(eq(logEntries.id, id), isNull(logEntries.deletedAt))),
+    [id],
+  );
+  return { entry: data[0] ?? null, loaded: updatedAt !== undefined };
+}
+
+/** Logs a food, snapshotting its nutrients for this amount. */
+export async function addEntry(date: string, food: Food, amount: EntryAmount): Promise<void> {
+  await getDb()
+    .insert(logEntries)
+    .values({
+      id: randomUUID(),
+      date,
+      foodId: food.id,
+      ...amount,
+      ...scaleNutrients(food, amount.grams),
+      incompleteNutrients: food.incompleteNutrients,
+    });
+}
+
+/**
+ * Changes an entry's amount or meal. The snapshot is re-scaled from itself,
+ * never re-read from the food: food edits must not change past entries.
+ */
+export async function updateEntry(entry: LogEntry, amount: EntryAmount): Promise<void> {
   await getDb()
     .update(logEntries)
-    .set({ deletedAt: new Date() })
-    .where(and(eq(logEntries.date, date), isNull(logEntries.deletedAt)));
+    .set({ ...amount, ...rescaleSnapshot(entry, entry.grams, amount.grams) })
+    .where(eq(logEntries.id, entry.id));
+}
+
+/** Soft delete: the row stays for future sync. */
+export async function softDeleteEntry(id: string): Promise<void> {
+  await getDb().update(logEntries).set({ deletedAt: new Date() }).where(eq(logEntries.id, id));
 }

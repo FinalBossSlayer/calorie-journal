@@ -3,7 +3,7 @@ import { ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
-import { addSampleDay, clearDay, useDayLog } from '@/db/queries/log';
+import { useDayLog } from '@/db/queries/log';
 import { type Profile, useProfile } from '@/db/queries/profile';
 import { useTargetsForDate } from '@/db/queries/targets';
 import { Button } from '@/features/common/Button';
@@ -51,19 +51,11 @@ function TodayContent({ profile }: { profile: Profile }) {
               <Text className="text-xs text-text-muted">{t('today.incompleteNote')}</Text>
             ) : null}
 
-            <Button label={t('today.addFood')} onPress={() => router.navigate('/foods')} />
+            <Button label={t('today.addFood')} onPress={() => router.push('/add-food')} />
 
             {groups.map((g) => (
               <MealCard key={g.meal.id} group={g} />
             ))}
-
-            {/* TEMPORARY: until food logging exists. Secondary buttons, so the accent one stays unique. */}
-            {__DEV__ ? (
-              <>
-                <Button label={t('dev.addSampleDay')} variant="secondary" onPress={() => void addSampleDay(date)} />
-                <Button label={t('dev.clearDay')} variant="secondary" onPress={() => void clearDay(date)} />
-              </>
-            ) : null}
           </>
         ) : null}
       </View>

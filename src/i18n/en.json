@@ -6,8 +6,7 @@
     "profile": "Profile"
   },
   "placeholder": {
-    "history": "Your previous days will show here.",
-    "foods": "Search foods and build recipes here."
+    "history": "Your previous days will show here."
   },
   "database": {
     "loading": "Loading food database…"
@@ -153,10 +152,6 @@
     "nextDay": "Next day",
     "pickDate": "Pick a date"
   },
-  "dev": {
-    "addSampleDay": "Add sample day (development only)",
-    "clearDay": "Clear this day (development only)"
-  },
   "today": {
     "ringEaten": "kcal eaten",
     "ringLeft": "kcal left",
@@ -164,6 +159,41 @@
     "ofTarget": "of {{target}} kcal",
     "nothingLogged": "Nothing logged yet",
     "addFood": "+ Add food",
-    "incompleteNote": "≥ means some foods have unknown values, so the real amount is higher."
+    "incompleteNote": "≥ means some foods have unknown values, so the real amount is higher.",
+    "addToMeal": "Add food to {{meal}}",
+    "editEntry": "Edit {{name}}"
+  },
+  "search": {
+    "placeholder": "Search foods, e.g. burek",
+    "recent": "Recently used",
+    "hint": "Type at least two letters to search.",
+    "noResults": "No foods found for “{{query}}”.",
+    "clear": "Clear search",
+    "per100g": "kcal / 100 g",
+    "source": {
+      "user": "My food",
+      "seed": "Macedonian dish",
+      "usda": "USDA"
+    },
+    "estimate": "estimate"
+  },
+  "addFood": {
+    "title": "Add food"
+  },
+  "logFood": {
+    "editTitle": "Edit entry",
+    "unit": "Portion or grams",
+    "grams": "Grams",
+    "amount": "Amount",
+    "quantity": "Number of portions",
+    "amountError": "Enter an amount above 0 and up to {{max}} g.",
+    "meal": "Meal",
+    "add": "Add",
+    "per100g": "per 100 g",
+    "delete": "Delete entry",
+    "deleteTitle": "Delete this entry?",
+    "deleteBody": "{{name}} will be removed from this day.",
+    "deleteConfirm": "Delete",
+    "notFound": "This food or entry is no longer available."
   }
 }
