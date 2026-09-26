@@ -23,3 +23,17 @@ export function yearsBefore(date: string, years: number): string {
   if (target.getMonth() !== m - 1) target.setDate(0); // rolled into March
   return toDateString(target);
 }
+
+/** The day `days` after `date` (negative goes back). Safe across DST and month ends. */
+export function shiftDate(date: string, days: number): string {
+  const d = fromDateString(date);
+  d.setDate(d.getDate() + days);
+  return toDateString(d);
+}
+
+/** 'today' / 'yesterday' relative to `today`, otherwise null (show the full date). */
+export function relativeDay(date: string, today: string): 'today' | 'yesterday' | null {
+  if (date === today) return 'today';
+  if (date === shiftDate(today, -1)) return 'yesterday';
+  return null;
+}
