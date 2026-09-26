@@ -152,5 +152,12 @@
     "ringEaten": "Calories eaten",
     "ringLeft": "Calories left",
     "restartOnboarding": "Restart onboarding (development only)"
+  },
+  "date": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "previousDay": "Previous day",
+    "nextDay": "Next day",
+    "pickDate": "Pick a date"
   }
 }

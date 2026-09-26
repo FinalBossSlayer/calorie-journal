@@ -1,31 +1,23 @@
-import { Text, View } from 'react-native';
+import { ScrollView, Text, View } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useTranslation } from 'react-i18next';
 
-import { PlaceholderScreen } from '@/features/common/PlaceholderScreen';
-
-// Macro swatches double as a visual check that theme tokens switch with light/dark mode.
-const macros = [
-  { key: 'protein', className: 'text-protein' },
-  { key: 'carbs', className: 'text-carbs' },
-  { key: 'fat', className: 'text-fat' },
-] as const;
+import { DateHeader } from '@/features/today/DateHeader';
 
 export default function TodayScreen() {
   const { t } = useTranslation();
+  const insets = useSafeAreaInsets();
 
   return (
-    <PlaceholderScreen title={t('tabs.today')} description={t('placeholder.today')}>
-      <View className="flex-row gap-3">
-        {macros.map((m) => (
-          <View key={m.key} className="flex-1 rounded-card bg-surface p-3">
-            <Text className={`text-2xl font-bold ${m.className}`}>—</Text>
-            <Text className="text-xs text-text-muted">{t(`macros.${m.key}`)}</Text>
-          </View>
-        ))}
+    <ScrollView
+      className="flex-1 bg-background"
+      contentContainerStyle={{ paddingTop: insets.top + 16, paddingBottom: 24 }}>
+      <View className="gap-4 px-4">
+        <DateHeader />
+        <View className="rounded-card border border-border bg-surface p-4">
+          <Text className="text-base text-text-muted">{t('placeholder.today')}</Text>
+        </View>
       </View>
-      <View className="items-center rounded-card bg-accent p-4">
-        <Text className="text-base font-bold text-on-accent">{t('placeholder.comingSoon')}</Text>
-      </View>
-    </PlaceholderScreen>
+    </ScrollView>
   );
 }
