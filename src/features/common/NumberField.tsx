@@ -11,18 +11,35 @@ type Props = {
   error?: string;
   placeholder?: string;
   autoFocus?: boolean;
+  /**
+   * Smaller, for fields side by side. The error only turns the border red:
+   * the parent shows the message under the whole row.
+   */
+  compact?: boolean;
 };
 
 /** Big numeric input with a unit, e.g. "180 cm". Value stays text; parsing happens in the form schema. */
-export function NumberField({ label, unit, value, onChangeText, onBlur, error, placeholder, autoFocus }: Props) {
+export function NumberField({
+  label,
+  unit,
+  value,
+  onChangeText,
+  onBlur,
+  error,
+  placeholder,
+  autoFocus,
+  compact = false,
+}: Props) {
   const { colors } = useThemeColors();
   return (
     <View className="gap-1">
-      <Text className="text-sm text-text-muted">{label}</Text>
+      <Text className="text-sm text-text-muted" numberOfLines={1}>
+        {label}
+      </Text>
       <View
-        className={`flex-row items-baseline gap-2 rounded-card border-2 bg-surface px-4 py-2 ${
-          error ? 'border-over' : 'border-border'
-        }`}>
+        className={`flex-row items-baseline rounded-card border-2 bg-surface ${
+          compact ? 'gap-1 px-3 py-1' : 'gap-2 px-4 py-2'
+        } ${error ? 'border-over' : 'border-border'}`}>
         <TextInput
           accessibilityLabel={label}
           value={value}
@@ -33,11 +50,11 @@ export function NumberField({ label, unit, value, onChangeText, onBlur, error, p
           placeholderTextColor={colors.textMuted}
           keyboardType="decimal-pad"
           maxLength={6}
-          className="flex-1 text-3xl font-bold text-text"
+          className={`flex-1 font-bold text-text ${compact ? 'text-xl' : 'text-3xl'}`}
         />
-        <Text className="text-lg text-text-muted">{unit}</Text>
+        <Text className={`text-text-muted ${compact ? 'text-sm' : 'text-lg'}`}>{unit}</Text>
       </View>
-      {error ? <Text className="text-sm text-over">{error}</Text> : null}
+      {error && !compact ? <Text className="text-sm text-over">{error}</Text> : null}
     </View>
   );
 }

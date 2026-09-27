@@ -5,8 +5,11 @@ import { Alert, Text, View } from 'react-native';
 import { type Food, type Portion, useFood } from '@/db/queries/foods';
 import { addEntry, type LogEntry, type Meal, softDeleteEntry, updateEntry, useEntry, useMeals } from '@/db/queries/log';
 import { DEFAULT_MEAL_IDS } from '@/db/defaults';
+import { Button } from '@/features/common/Button';
+import { HeaderAction } from '@/features/common/HeaderAction';
 import { foodTags } from '@/features/foods/foodTags';
 import { LogFoodForm } from '@/features/foods/LogFoodForm';
+import { myVersionHref, recipeHref } from '@/features/recipes/recipeRoute';
 import { GRAMS_UNIT, type LogFormInput } from '@/features/foods/logFormSchema';
 import { formatNutrient, localizedName } from '@/i18n/format';
 import { defaultMealId, rescaleSnapshot } from '@/lib/logging';
@@ -42,10 +45,30 @@ export default function FoodScreen() {
     }
   }
 
+  // Your own foods can be changed from here; past entries keep their snapshot.
+  const ownFood = !editing && food.food?.source === 'user' && food.food.deletedAt === null;
+
   return (
     <View className="flex-1 bg-background">
       <Stack.Screen
-        options={{ headerShown: true, title: editing ? t('logFood.editTitle') : t('addFood.title') }}
+        options={{
+          headerShown: true,
+          title: editing ? t('logFood.editTitle') : t('addFood.title'),
+          headerRight: ownFood
+            ? () => (
+                <HeaderAction
+                  label={t('customFood.edit')}
+                  onPress={() =>
+                    router.push(
+                      food.food?.kind === 'recipe'
+                        ? recipeHref(id)
+                        : { pathname: '/custom-food/[id]', params: { id } },
+                    )
+                  }
+                />
+              )
+            : undefined,
+        }}
       />
       {body}
     </View>
@@ -70,7 +93,7 @@ function AddEntry({ food, portions, meals, mealParam }: FormProps & { mealParam:
 
   return (
     <LogFoodForm
-      header={<FoodHeader food={food} />}
+      header={<FoodHeader food={food} canCopy />}
       portions={portions}
       meals={visible}
       initial={initial}
@@ -131,7 +154,8 @@ function EditEntry({ food, portions, meals, entry }: FormProps & { entry: LogEnt
   );
 }
 
-function FoodHeader({ food }: { food: Food }) {
+/** `canCopy`: offer "Make my version" for seed dishes (not while editing an entry). */
+function FoodHeader({ food, canCopy = false }: { food: Food; canCopy?: boolean }) {
   const { t } = useTranslation();
   return (
     <View className="gap-1">
@@ -139,6 +163,16 @@ function FoodHeader({ food }: { food: Food }) {
       <Text className="text-sm text-text-muted">
         {foodTags(t, food)} · {formatNutrient(food.kcal)} {t('units.kcal')} {t('logFood.per100g')}
       </Text>
+      {canCopy && food.source === 'seed' ? (
+        <View className="items-start pt-2">
+          <Button
+            label={t('recipe.makeMyVersion')}
+            variant="secondary"
+            size="small"
+            onPress={() => router.push(myVersionHref(food.id))}
+          />
+        </View>
+      ) : null}
     </View>
   );
 }

@@ -173,7 +173,8 @@
     "source": {
       "user": "My food",
       "seed": "Macedonian dish",
-      "usda": "USDA"
+      "usda": "USDA",
+      "userRecipe": "My recipe"
     },
     "estimate": "estimate"
   },
@@ -195,5 +196,75 @@
     "deleteBody": "{{name}} will be removed from this day.",
     "deleteConfirm": "Delete",
     "notFound": "This food or entry is no longer available."
+  },
+  "customFood": {
+    "newTitle": "New food",
+    "editTitle": "Edit food",
+    "newFood": "+ New food",
+    "create": "Create “{{name}}”",
+    "edit": "Edit",
+    "nameMk": "Name in Macedonian",
+    "nameEn": "Name in English",
+    "nameHint": "One name is enough.",
+    "nameRequired": "Enter a name in at least one language.",
+    "nameTooLong": "Use at most {{max}} characters.",
+    "kind": "Type",
+    "kinds": {
+      "product": "Product",
+      "ingredient": "Ingredient",
+      "dish": "Dish"
+    },
+    "per100g": "Nutrition per 100 g",
+    "unknownHint": "Copy the values from the label. Leave a field empty if it isn't listed.",
+    "kcalRequired": "Enter the calories per 100 g.",
+    "nutrientRange": "{{nutrient}}: enter a number from 0 to {{max}}.",
+    "macroSum": "Protein, carbs and fat add up to more than 100 g.",
+    "sugarOverCarbs": "Sugar can't be more than carbs.",
+    "delete": "Delete food",
+    "deleteTitle": "Delete this food?",
+    "deleteBody": "{{name}} will no longer show up in search. Days where you already logged it stay the same.",
+    "deleteConfirm": "Delete",
+    "notFound": "This food is no longer available."
+  },
+  "portions": {
+    "title": "Portions",
+    "hint": "Optional. For example “1 slice” = 30 g, so you can log by the piece.",
+    "name": "Portion name",
+    "namePlaceholder": "1 slice",
+    "grams": "Grams",
+    "add": "+ Add portion",
+    "remove": "Remove portion",
+    "error": "Enter a name and a weight above 0, up to {{max}} g."
+  },
+  "recipe": {
+    "newTitle": "New recipe",
+    "editTitle": "Edit recipe",
+    "newRecipe": "+ New recipe",
+    "ingredients": "Ingredients",
+    "ingredientsHint": "Weigh ingredients raw, the way they go into the pot.",
+    "noIngredients": "No ingredients yet.",
+    "ingredientsRequired": "Add at least one ingredient.",
+    "addIngredient": "+ Add ingredient",
+    "addIngredientTitle": "Add ingredient",
+    "removeIngredient": "Remove {{name}}",
+    "ingredientAmount": "Amount of {{name}}",
+    "ingredientError": "Enter an amount above 0, up to {{max}} g.",
+    "rawWeight": "Raw weight: {{grams}} g",
+    "cookedWeight": "Cooked weight of the whole pot",
+    "cookedWeightHint": "Optional. Weigh the finished dish without the pot. Cooking adds or removes water, so this makes the values per 100 g accurate.",
+    "cookedWeightError": "Enter a weight above 0, up to {{max}} g.",
+    "result": "Per 100 g of the finished dish",
+    "wholePot": "Whole pot: {{kcal}} kcal · {{grams}} g",
+    "resultEmpty": "Add ingredients with their amounts to see the nutrition.",
+    "incompleteNote": "≥ means some ingredients have unknown values, so the real amount is higher.",
+    "delete": "Delete recipe",
+    "deleteTitle": "Delete this recipe?",
+    "deleteBody": "{{name}} will no longer show up in search. Days where you already logged it stay the same.",
+    "deleteConfirm": "Delete",
+    "notFound": "This recipe is no longer available.",
+    "makeMyVersion": "Make my version",
+    "myVersionSuffix": "(my version)",
+    "myVersionTitle": "My version",
+    "myVersionNote": "A copy of {{name}}. Change anything you like: the original stays as it is."
   }
 }

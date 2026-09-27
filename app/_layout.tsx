@@ -70,6 +70,9 @@ function AppStack() {
         <Stack.Screen name="profile-edit" />
         <Stack.Screen name="add-food" />
         <Stack.Screen name="food/[id]" />
+        <Stack.Screen name="custom-food/[id]" />
+        <Stack.Screen name="recipe/[id]" />
+        <Stack.Screen name="recipe/add-ingredient" />
       </Stack.Protected>
       <Stack.Protected guard={!hasProfile}>
         <Stack.Screen name="onboarding" />

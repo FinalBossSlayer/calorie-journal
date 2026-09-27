@@ -9,8 +9,7 @@ import { mkdirSync, readFileSync, rmSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
 
-import { NUTRIENTS, type NutrientValues } from '../../src/lib/nutrition';
-import { computeRecipeNutrition } from '../../src/lib/recipe';
+import { computeRecipeNutrition, roundNutrients } from '../../src/lib/recipe';
 import { toSearchKey } from '../../src/lib/translit';
 
 import { dishFoodId, dishIngredientId, dishPortionId, usdaFoodId, usdaPortionId } from './lib/ids';
@@ -43,15 +42,6 @@ interface Dish {
 
 function readJson<T>(file: string): T {
   return JSON.parse(readFileSync(join(SEED_DATA_DIR, file), 'utf8')) as T;
-}
-
-function roundNutrients(values: NutrientValues): NutrientValues {
-  const out = { ...values };
-  for (const n of NUTRIENTS) {
-    const v = out[n];
-    if (v !== null) out[n] = Math.round(v * (n === 'kcal' ? 10 : 1000)) / (n === 'kcal' ? 10 : 1000);
-  }
-  return out;
 }
 
 function loadFoods(): Map<string, UsdaFood> {

@@ -1,5 +1,12 @@
 import type { NutrientValues } from './nutrition';
-import { computeRecipeNutrition, type RecipeIngredientInput } from './recipe';
+import {
+  computeRecipeNutrition,
+  planIngredientChanges,
+  type RecipeIngredientInput,
+  recipePreview,
+  roundNutrients,
+  type StoredIngredient,
+} from './recipe';
 
 function food(values: Partial<NutrientValues>): NutrientValues {
   return {
@@ -136,6 +143,59 @@ describe('computeRecipeNutrition', () => {
 
     it.each([0, -100, NaN])('rejects cooked weight of %s', (cooked) => {
       expect(() => computeRecipeNutrition(tavce, cooked)).toThrow(RangeError);
+    });
+  });
+});
+
+describe('roundNutrients', () => {
+  it('rounds kcal to 0.1 and grams to 0.001, keeping unknowns', () => {
+    const r = roundNutrients(food({ kcal: 123.456, protein: 1.23456, salt: null }));
+    expect(r.kcal).toBe(123.5);
+    expect(r.protein).toBe(1.235);
+    expect(r.salt).toBeNull();
+  });
+});
+
+describe('recipePreview', () => {
+  it('is null until some ingredient has a valid amount', () => {
+    expect(recipePreview([], null)).toBeNull();
+    expect(recipePreview([{ grams: null, per100g: beans }, { grams: 0, per100g: onion }], null)).toBeNull();
+  });
+
+  it('leaves out rows still being typed', () => {
+    const r = recipePreview([{ grams: 100, per100g: beans }, { grams: null, per100g: oil }], null);
+    expect(r?.per100g.kcal).toBeCloseTo(333);
+  });
+
+  it('uses the cooked weight when valid, the raw weight otherwise', () => {
+    const rows = [{ grams: 500, per100g: beans }];
+    expect(recipePreview(rows, 1000)?.per100g.kcal).toBeCloseTo(166.5);
+    expect(recipePreview(rows, 0)?.per100g.kcal).toBeCloseTo(333);
+    expect(recipePreview(rows, null)?.finalWeightG).toBe(500);
+  });
+});
+
+describe('planIngredientChanges', () => {
+  const beansRow: StoredIngredient = { id: 'r1', ingredientFoodId: 'beans', grams: 500, sortOrder: 0 };
+  const onionRow: StoredIngredient = { id: 'r2', ingredientFoodId: 'onion', grams: 200, sortOrder: 1 };
+
+  it('does nothing when nothing changed', () => {
+    const edited = [
+      { rowId: 'r1', foodId: 'beans', grams: 500 },
+      { rowId: 'r2', foodId: 'onion', grams: 200 },
+    ];
+    expect(planIngredientChanges([beansRow, onionRow], edited)).toEqual({ insert: [], update: [], remove: [] });
+  });
+
+  it('inserts new rows, updates changed amounts and order, removes missing rows', () => {
+    const edited = [
+      { rowId: null, foodId: 'oil', grams: 50 },
+      { rowId: 'r1', foodId: 'beans', grams: 450 },
+    ];
+    expect(planIngredientChanges([beansRow, onionRow], edited)).toEqual({
+      insert: [{ ingredientFoodId: 'oil', grams: 50, sortOrder: 0 }],
+      update: [{ id: 'r1', ingredientFoodId: 'beans', grams: 450, sortOrder: 1 }],
+      remove: ['r2'],
     });
   });
 });

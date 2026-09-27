@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { FlatList, Pressable, Text, TextInput, View } from 'react-native';
 
 import type { FoodSearchRow } from '@/db/queries/foods';
+import { Button } from '@/features/common/Button';
 import { formatNutrient, localizedName } from '@/i18n/format';
 import { useThemeColors } from '@/theme/useThemeColors';
 
@@ -12,17 +13,23 @@ import { useFoodSearch } from './useFoodSearch';
 
 type Props = {
   onSelect: (food: FoodSearchRow) => void;
+  /** Foods never shown, e.g. the recipe being edited when picking its ingredients. */
+  excludeId?: string;
+  /** Offers to create a food named after the query, below the results. */
+  onCreate?: (query: string) => void;
   autoFocus?: boolean;
   /** Extra space under the list, e.g. for the home indicator. */
   bottomInset?: number;
 };
 
 /** Search box plus results (or recently used foods while the box is empty). */
-export function FoodSearch({ onSelect, autoFocus, bottomInset = 0 }: Props) {
+export function FoodSearch({ onSelect, excludeId, onCreate, autoFocus, bottomInset = 0 }: Props) {
   const { t } = useTranslation();
   const { colors } = useThemeColors();
   const [query, setQuery] = useState('');
-  const { results, showingRecent, loaded } = useFoodSearch(query);
+  const search = useFoodSearch(query);
+  const { showingRecent, loaded } = search;
+  const results = excludeId ? search.results.filter((f) => f.id !== excludeId) : search.results;
 
   let emptyText: string | null = null;
   if (loaded && results.length === 0) {
@@ -61,6 +68,18 @@ export function FoodSearch({ onSelect, autoFocus, bottomInset = 0 }: Props) {
         ListHeaderComponent={
           showingRecent && results.length > 0 ? (
             <Text className="pb-2 text-sm text-text-muted">{t('search.recent')}</Text>
+          ) : null
+        }
+        ListFooterComponent={
+          onCreate && loaded && !showingRecent && query.trim() ? (
+            <View className="items-start py-4">
+              <Button
+                label={t('customFood.create', { name: query.trim() })}
+                variant="secondary"
+                size="small"
+                onPress={() => onCreate(query.trim())}
+              />
+            </View>
           ) : null
         }
         ListEmptyComponent={emptyText ? <Text className="py-4 text-base text-text-muted">{emptyText}</Text> : null}

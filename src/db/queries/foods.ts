@@ -51,3 +51,9 @@ export function useFood(id: string): { food: Food | null; portions: Portion[]; l
     loaded: foodRows.updatedAt !== undefined && portionRows.updatedAt !== undefined,
   };
 }
+
+/** One food, read once (not live). Includes deleted foods. */
+export async function getFood(id: string): Promise<Food | null> {
+  const [food] = await getDb().select().from(foods).where(eq(foods.id, id));
+  return food ?? null;
+}
