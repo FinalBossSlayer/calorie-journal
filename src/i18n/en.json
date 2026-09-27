@@ -5,9 +5,6 @@
     "foods": "Foods",
     "profile": "Profile"
   },
-  "placeholder": {
-    "history": "Your previous days will show here."
-  },
   "database": {
     "loading": "Loading food database…"
   },
@@ -266,5 +263,52 @@
     "myVersionSuffix": "(my version)",
     "myVersionTitle": "My version",
     "myVersionNote": "A copy of {{name}}. Change anything you like: the original stays as it is."
+  },
+  "history": {
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month",
+    "dayWithKcal": "{{day}}: {{kcal}} kcal, {{status}}",
+    "status": {
+      "ok": "Within target",
+      "over": "Over target",
+      "unknown": "Calories unknown"
+    },
+    "weekdays": {
+      "mon": "Mo",
+      "tue": "Tu",
+      "wed": "We",
+      "thu": "Th",
+      "fri": "Fr",
+      "sat": "Sa",
+      "sun": "Su"
+    },
+    "previousWeek": "Previous week",
+    "nextWeek": "Next week",
+    "thisWeek": "This week",
+    "averageLabel": "kcal a day on average · target {{target}}",
+    "noDays": "Nothing logged this week"
+  },
+  "meals": {
+    "title": "Meals",
+    "manage": "Manage meals",
+    "hint": "Rename, reorder or hide meals. Hidden meals don’t show on Today or when adding food, but days where you already used them stay the same.",
+    "add": "+ Add meal",
+    "addTitle": "New meal",
+    "renameTitle": "Rename meal",
+    "rename": "Rename {{meal}}",
+    "moveUp": "Move {{meal}} up",
+    "moveDown": "Move {{meal}} down",
+    "hide": "Hide {{meal}}",
+    "show": "Show {{meal}}",
+    "hidden": "Hidden",
+    "lastVisibleTitle": "Keep one meal",
+    "lastVisibleBody": "At least one meal has to stay visible so you can log food.",
+    "delete": "Delete meal",
+    "deleteTitle": "Delete this meal?",
+    "deleteBody": "{{meal}} will be removed from your meals.",
+    "deleteConfirm": "Delete",
+    "hasEntriesTitle": "This meal has food logged",
+    "hasEntriesBody": "{{meal}} is used on days in your journal, so it can't be deleted without losing those entries. Hide it instead: it disappears from Today, and past days stay the same.",
+    "hideInstead": "Hide"
   }
 }

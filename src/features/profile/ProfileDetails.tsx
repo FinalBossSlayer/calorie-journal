@@ -4,13 +4,14 @@ import { Text, View } from 'react-native';
 
 import type { Profile } from '@/db/queries/profile';
 import { Button } from '@/features/common/Button';
-import { formatNumber } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { ageOn } from '@/lib/targets';
 
 type Props = { profile: Profile; today: string };
 
 /** Read-only summary of the profile, with a link to the edit screen. */
 export function ProfileDetails({ profile, today }: Props) {
+  const { formatNumber } = useFormat();
   const { t } = useTranslation();
 
   const goal =

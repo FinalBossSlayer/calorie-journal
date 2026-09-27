@@ -52,8 +52,13 @@ export async function syncTargetHistory(profile: Profile): Promise<void> {
  * days (falling back to the live targets if there is no history yet).
  */
 export function useTargetsForDate(profile: Profile, date: string, today: string): Targets {
+  return useTargetsLookup(profile, today)(date);
+}
+
+/** Like useTargetsForDate, for screens that show many days (History). */
+export function useTargetsLookup(profile: Profile, today: string): (date: string) => Targets {
   const { data } = useLiveQuery(historyQuery());
   const live = liveTargets(profile, today);
-  if (date >= today) return live;
-  return targetsForDate(data.map(toHistoryRow), date) ?? live;
+  const rows = data.map(toHistoryRow);
+  return (date) => (date >= today ? live : (targetsForDate(rows, date) ?? live));
 }

@@ -1,6 +1,6 @@
 import { getLocales } from 'expo-localization';
 import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
+import { initReactI18next, useTranslation } from 'react-i18next';
 
 import en from './en.json';
 import mk from './mk.json';
@@ -22,8 +22,19 @@ export function deviceLanguage(): Language {
   return getLocales()[0]?.languageCode === 'en' ? 'en' : defaultLanguage;
 }
 
-export function currentLanguage(): Language {
-  return i18n.language === 'en' ? 'en' : 'mk';
+/**
+ * The UI language. Always read it through this hook, never from i18n.language
+ * directly: the React Compiler memoizes render values by their inputs and can't
+ * see a global, so text built from it would keep the old language after a switch.
+ */
+export function useLanguage(): Language {
+  const { i18n: instance } = useTranslation();
+  return instance.language === 'en' ? 'en' : 'mk';
+}
+
+/** Locale tag for Intl formatting in render; see useLanguage. */
+export function useIntlLocale(): string {
+  return intlLocale[useLanguage()];
 }
 
 // Resources are bundled, so init completes synchronously before the first render.

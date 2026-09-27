@@ -1,3 +1,4 @@
+import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Text, View } from 'react-native';
 
@@ -8,7 +9,7 @@ import { SegmentedControl } from '@/features/common/SegmentedControl';
 
 const RING_LABEL_KEYS = { eaten: 'profile.ringEaten', left: 'profile.ringLeft' } as const;
 
-/** Language and Today-ring mode. Changes save immediately. */
+/** Language, Today-ring mode and a link to meal management. Changes save immediately. */
 export function ProfileSettings({ profile }: { profile: Profile }) {
   const { t } = useTranslation();
 
@@ -34,6 +35,8 @@ export function ProfileSettings({ profile }: { profile: Profile }) {
           onChange={(ringMode) => void updateProfile(profile.id, { ringMode })}
         />
       </View>
+
+      <Button label={t('meals.manage')} variant="secondary" onPress={() => router.push('/meals')} />
 
       {__DEV__ ? (
         <Button

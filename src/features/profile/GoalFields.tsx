@@ -4,13 +4,14 @@ import { Text, View } from 'react-native';
 
 import { GOALS } from '@/db/schema';
 import { ChoiceList } from '@/features/common/ChoiceList';
-import { formatNumber } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { GOAL_RATES_KG_PER_WEEK, goalAdjustment } from '@/lib/targets';
 
 import { useProfileForm } from './useProfileForm';
 
 /** Goal choice, plus the weekly rate (hidden for "maintain"). */
 export function GoalFields() {
+  const { formatNumber } = useFormat();
   const { t } = useTranslation();
   const { control } = useProfileForm();
   const goal = useController({ control, name: 'goal' });

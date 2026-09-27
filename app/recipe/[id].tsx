@@ -7,8 +7,8 @@ import { type LoadedRecipe, loadRecipe, saveRecipe, softDeleteUserFood } from '@
 import { RecipeForm } from '@/features/recipes/RecipeForm';
 import { cloneRecipeInput, emptyRecipeInput, recipeToInput } from '@/features/recipes/recipeInput';
 import { NEW_RECIPE_ID } from '@/features/recipes/recipeRoute';
-import i18n, { currentLanguage } from '@/i18n';
-import { localizedName } from '@/i18n/format';
+import i18n, { useLanguage } from '@/i18n';
+import { useFormat } from '@/i18n/format';
 
 type Params = {
   id: string;
@@ -83,7 +83,7 @@ export default function RecipeScreen() {
 
 function NewRecipe() {
   const { t } = useTranslation();
-  const language = currentLanguage();
+  const language = useLanguage();
   return (
     <RecipeForm
       initial={emptyRecipeInput()}
@@ -99,8 +99,9 @@ function NewRecipe() {
 
 /** "Make my version": a new user recipe pre-filled from a seed dish. Nothing is saved until Save. */
 function MyVersion({ source }: { source: LoadedRecipe }) {
+  const { localizedName } = useFormat();
   const { t } = useTranslation();
-  const language = currentLanguage();
+  const language = useLanguage();
   // Each name gets the suffix in its own language.
   const suffix = {
     mk: i18n.getFixedT('mk')('recipe.myVersionSuffix'),
@@ -123,8 +124,9 @@ function MyVersion({ source }: { source: LoadedRecipe }) {
 }
 
 function EditRecipe({ recipe }: { recipe: LoadedRecipe }) {
+  const { localizedName } = useFormat();
   const { t } = useTranslation();
-  const language = currentLanguage();
+  const language = useLanguage();
   const { food } = recipe;
 
   const confirmDelete = () => {

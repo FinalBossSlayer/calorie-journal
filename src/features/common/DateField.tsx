@@ -2,7 +2,7 @@ import DateTimePicker, { DateTimePickerAndroid } from '@react-native-community/d
 import { useTranslation } from 'react-i18next';
 import { Platform, Pressable, Text, View } from 'react-native';
 
-import { currentLanguage, intlLocale } from '@/i18n';
+import { useIntlLocale } from '@/i18n';
 import { fromDateString, toDateString } from '@/lib/dates';
 
 type Props = {
@@ -21,6 +21,7 @@ type Props = {
  */
 export function DateField({ value, onChange, initial, min, max, error }: Props) {
   const { t } = useTranslation();
+  const locale = useIntlLocale();
   const date = fromDateString(value ?? initial);
   const minimumDate = fromDateString(min);
   const maximumDate = fromDateString(max);
@@ -52,7 +53,7 @@ export function DateField({ value, onChange, initial, min, max, error }: Props) 
   }
 
   const label = value
-    ? fromDateString(value).toLocaleDateString(intlLocale[currentLanguage()], {
+    ? fromDateString(value).toLocaleDateString(locale, {
         day: 'numeric',
         month: 'long',
         year: 'numeric',

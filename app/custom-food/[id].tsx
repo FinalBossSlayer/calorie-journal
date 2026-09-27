@@ -7,8 +7,8 @@ import { saveCustomFood, softDeleteUserFood } from '@/db/queries/userFoods';
 import { CustomFoodForm } from '@/features/foods/CustomFoodForm';
 import { type CustomFoodInput, emptyPortion } from '@/features/foods/customFoodSchema';
 import { NEW_FOOD_ID } from '@/features/foods/customFoodRoute';
-import { currentLanguage } from '@/i18n';
-import { localizedName } from '@/i18n/format';
+import { useLanguage } from '@/i18n';
+import { useFormat } from '@/i18n/format';
 import { type CustomFoodKind, CUSTOM_FOOD_KINDS } from '@/lib/customFood';
 import { NUTRIENTS } from '@/lib/nutrition';
 import { portionDisplayName } from '@/lib/portions';
@@ -54,7 +54,7 @@ export default function CustomFoodScreen() {
 
 function NewFood({ name, meal }: { name: string; meal: string | undefined }) {
   const { t } = useTranslation();
-  const language = currentLanguage();
+  const language = useLanguage();
   const trimmed = name.trim();
   const initial: CustomFoodInput = {
     nameMk: language === 'mk' ? trimmed : '',
@@ -78,8 +78,9 @@ function NewFood({ name, meal }: { name: string; meal: string | undefined }) {
 }
 
 function EditFood({ food, portions }: { food: Food; portions: Portion[] }) {
+  const { localizedName } = useFormat();
   const { t } = useTranslation();
-  const language = currentLanguage();
+  const language = useLanguage();
 
   const confirmDelete = () => {
     Alert.alert(

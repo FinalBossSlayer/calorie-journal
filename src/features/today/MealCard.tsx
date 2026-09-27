@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, Text, View } from 'react-native';
 
 import type { DayEntry, Meal } from '@/db/queries/log';
-import { formatNumber, formatNutrient, localizedName } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import type { MealGroup } from '@/lib/day';
 import { useThemeColors } from '@/theme/useThemeColors';
 
@@ -13,6 +13,7 @@ import { useThemeColors } from '@/theme/useThemeColors';
  * food with its grams and kcal. Tapping a food opens it for editing.
  */
 export function MealCard({ group }: { group: MealGroup<Meal, DayEntry> }) {
+  const { formatNumber, formatNutrient, localizedName } = useFormat();
   const { t } = useTranslation();
   const { colors } = useThemeColors();
   const { meal, entries, totals } = group;

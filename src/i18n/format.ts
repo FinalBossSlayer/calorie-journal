@@ -1,23 +1,40 @@
-import { currentLanguage, intlLocale } from './index';
+import { useMemo } from 'react';
 
-/** Locale-aware number: "2 209" / "4,5" in Macedonian, "2,209" / "4.5" in English. */
-export function formatNumber(value: number, maxFractionDigits = 0): string {
-  return new Intl.NumberFormat(intlLocale[currentLanguage()], {
-    maximumFractionDigits: maxFractionDigits,
-  }).format(value);
+import { intlLocale, type Language, useLanguage } from './index';
+
+export interface Format {
+  /** Locale-aware number: "2 209" / "4,5" in Macedonian, "2,209" / "4.5" in English. */
+  formatNumber: (value: number, maxFractionDigits?: number) => string;
+  /**
+   * A nutrient amount for display: "—" when unknown (never 0), "≥ 12" when the
+   * value is a lower bound because some logged foods have unknown values.
+   */
+  formatNutrient: (value: number | null, incomplete?: boolean, maxFractionDigits?: number) => string;
+  /** A name stored in both languages, in the UI language, falling back to the other one. */
+  localizedName: (nameMk: string | null, nameEn: string | null) => string;
+}
+
+export function makeFormat(language: Language): Format {
+  const formatNumber = (value: number, maxFractionDigits = 0) =>
+    new Intl.NumberFormat(intlLocale[language], { maximumFractionDigits: maxFractionDigits }).format(value);
+
+  return {
+    formatNumber,
+    formatNutrient: (value, incomplete = false, maxFractionDigits = 0) =>
+      value === null ? '—' : `${incomplete ? '≥ ' : ''}${formatNumber(value, maxFractionDigits)}`,
+    localizedName: (nameMk, nameEn) => {
+      const [first, second] = language === 'mk' ? [nameMk, nameEn] : [nameEn, nameMk];
+      return first ?? second ?? '';
+    },
+  };
 }
 
 /**
- * A nutrient amount for display: "—" when unknown (never 0), "≥ 12" when the
- * value is a lower bound because some logged foods have unknown values.
+ * Formatters for the current UI language. A hook, not plain functions reading a
+ * global: the React Compiler memoizes render values by their inputs, so text
+ * built from a global would keep the old language after a switch (see useLanguage).
  */
-export function formatNutrient(value: number | null, incomplete = false, maxFractionDigits = 0): string {
-  if (value === null) return '—';
-  return `${incomplete ? '≥ ' : ''}${formatNumber(value, maxFractionDigits)}`;
-}
-
-/** A name stored in both languages, in the UI language, falling back to the other one. */
-export function localizedName(nameMk: string | null, nameEn: string | null): string {
-  const [first, second] = currentLanguage() === 'mk' ? [nameMk, nameEn] : [nameEn, nameMk];
-  return first ?? second ?? '';
+export function useFormat(): Format {
+  const language = useLanguage();
+  return useMemo(() => makeFormat(language), [language]);
 }

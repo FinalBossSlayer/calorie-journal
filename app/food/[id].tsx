@@ -11,7 +11,7 @@ import { foodTags } from '@/features/foods/foodTags';
 import { LogFoodForm } from '@/features/foods/LogFoodForm';
 import { myVersionHref, recipeHref } from '@/features/recipes/recipeRoute';
 import { GRAMS_UNIT, type LogFormInput } from '@/features/foods/logFormSchema';
-import { formatNutrient, localizedName } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { defaultMealId, rescaleSnapshot } from '@/lib/logging';
 import { scaleNutrients } from '@/lib/nutrition';
 import { useSelectedDate } from '@/store/selectedDate';
@@ -109,6 +109,7 @@ function AddEntry({ food, portions, meals, mealParam }: FormProps & { mealParam:
 }
 
 function EditEntry({ food, portions, meals, entry }: FormProps & { entry: LogEntry }) {
+  const { localizedName } = useFormat();
   const { t } = useTranslation();
 
   const portion = portions.find((p) => p.id === entry.portionId);
@@ -156,6 +157,7 @@ function EditEntry({ food, portions, meals, entry }: FormProps & { entry: LogEnt
 
 /** `canCopy`: offer "Make my version" for seed dishes (not while editing an entry). */
 function FoodHeader({ food, canCopy = false }: { food: Food; canCopy?: boolean }) {
+  const { formatNutrient, localizedName } = useFormat();
   const { t } = useTranslation();
   return (
     <View className="gap-1">

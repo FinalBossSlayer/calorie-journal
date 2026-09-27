@@ -8,7 +8,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Button } from '@/features/common/Button';
 import { ChipGroup } from '@/features/common/ChipGroup';
 import { NumberField } from '@/features/common/NumberField';
-import { formatNumber } from '@/i18n/format';
+import { type Format, useFormat } from '@/i18n/format';
 import { CUSTOM_FOOD_KINDS, NUTRIENT_MAX_PER_100G } from '@/lib/customFood';
 import type { Nutrient } from '@/lib/nutrition';
 
@@ -80,6 +80,7 @@ export function CustomFoodForm({ initial, submitLabel, onSubmit, onDelete }: Pro
 
 function NutrientFields() {
   const { t } = useTranslation();
+  const { formatNumber } = useFormat();
   const { errors } = useFormState<CustomFoodInput>({ name: 'nutrients' });
 
   return (
@@ -93,7 +94,7 @@ function NutrientFields() {
 
       {NUTRIENT_ROWS.map((row) => {
         const messages = row.flatMap((n) => {
-          const text = nutrientErrorText(t, n, errors.nutrients?.[n]);
+          const text = nutrientErrorText(t, formatNumber, n, errors.nutrients?.[n]);
           return text ? [text] : [];
         });
         return (
@@ -119,6 +120,7 @@ function NutrientFields() {
 
 function NutrientField({ nutrient, compact = false }: { nutrient: Nutrient; compact?: boolean }) {
   const { t } = useTranslation();
+  const { formatNumber } = useFormat();
   return (
     <Controller<CustomFoodInput, `nutrients.${Nutrient}`>
       name={`nutrients.${nutrient}`}
@@ -131,14 +133,19 @@ function NutrientField({ nutrient, compact = false }: { nutrient: Nutrient; comp
           onBlur={field.onBlur}
           placeholder="—"
           compact={compact}
-          error={nutrientErrorText(t, nutrient, fieldState.error)}
+          error={nutrientErrorText(t, formatNumber, nutrient, fieldState.error)}
         />
       )}
     />
   );
 }
 
-function nutrientErrorText(t: TFunction, nutrient: Nutrient, error: FieldError | undefined): string | undefined {
+function nutrientErrorText(
+  t: TFunction,
+  formatNumber: Format['formatNumber'],
+  nutrient: Nutrient,
+  error: FieldError | undefined,
+): string | undefined {
   if (!error) return undefined;
   switch (error.message as CustomFoodError) {
     case 'required':

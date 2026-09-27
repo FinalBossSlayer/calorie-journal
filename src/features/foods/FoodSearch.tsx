@@ -5,7 +5,7 @@ import { FlatList, Pressable, Text, TextInput, View } from 'react-native';
 
 import type { FoodSearchRow } from '@/db/queries/foods';
 import { Button } from '@/features/common/Button';
-import { formatNutrient, localizedName } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { useThemeColors } from '@/theme/useThemeColors';
 
 import { foodTags } from './foodTags';
@@ -90,6 +90,7 @@ export function FoodSearch({ onSelect, excludeId, onCreate, autoFocus, bottomIns
 }
 
 function FoodRow({ food, onPress }: { food: FoodSearchRow; onPress: () => void }) {
+  const { formatNutrient, localizedName } = useFormat();
   const { t } = useTranslation();
   return (
     <Pressable

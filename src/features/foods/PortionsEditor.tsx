@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Pressable, Text, TextInput, View } from 'react-native';
 
 import { Button } from '@/features/common/Button';
-import { formatNumber } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { MAX_ENTRY_GRAMS } from '@/lib/logging';
 import { useThemeColors } from '@/theme/useThemeColors';
 
@@ -15,6 +15,7 @@ type WithPortions = { portions: PortionInput[] };
 
 /** Editable list of portions ("1 slice = 30 g"). Must be inside a FormProvider. */
 export function PortionsEditor() {
+  const { formatNumber } = useFormat();
   const { t } = useTranslation();
   const { colors } = useThemeColors();
   const { control } = useFormContext<WithPortions>();

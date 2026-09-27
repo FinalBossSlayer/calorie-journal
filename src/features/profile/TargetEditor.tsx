@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { Button } from '@/features/common/Button';
 import { NumberField } from '@/features/common/NumberField';
-import { formatNumber } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import type { Nutrient } from '@/lib/nutrition';
 import { parseDecimal } from '@/lib/numbers';
 import { OVERRIDE_LIMITS } from '@/lib/targets';
@@ -25,6 +25,7 @@ type Props = {
 
 /** Bottom sheet for setting one target manually. Mount it only while editing. */
 export function TargetEditor({ nutrient, current, calculated, overridden, minKcal, onSave, onReset, onClose }: Props) {
+  const { formatNumber } = useFormat();
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
   const [text, setText] = useState(String(current));

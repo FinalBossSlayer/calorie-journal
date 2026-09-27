@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Pressable, Text, View } from 'react-native';
 
-import { formatNumber } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import type { Nutrient } from '@/lib/nutrition';
 import { TARGET_KIND, type TargetResult } from '@/lib/targets';
 
@@ -22,6 +22,7 @@ type Props = {
 
 /** Daily targets: big kcal, three macro tiles, and a compact fiber/sugar/salt row. */
 export function TargetsOverview({ result, onPressTarget }: Props) {
+  const { formatNumber } = useFormat();
   const { t } = useTranslation();
   const { targets } = result;
   const custom = (n: Nutrient) => result.overridden.includes(n);

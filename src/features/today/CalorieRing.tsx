@@ -3,7 +3,7 @@ import { Text, View } from 'react-native';
 import Svg, { Circle, G } from 'react-native-svg';
 
 import type { RingMode } from '@/db/schema';
-import { formatNumber, formatNutrient } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { ringValues } from '@/lib/day';
 import { useThemeColors } from '@/theme/useThemeColors';
 
@@ -24,6 +24,7 @@ type Props = {
 
 /** Big calorie ring: fills with kcal eaten, turns the "over" color past the target. */
 export function CalorieRing({ eatenKcal, incomplete, targetKcal, mode }: Props) {
+  const { formatNumber, formatNutrient } = useFormat();
   const { t } = useTranslation();
   const { colors } = useThemeColors();
   const ring = ringValues(eatenKcal, targetKcal, mode);

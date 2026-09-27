@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Text, View } from 'react-native';
 
-import { formatNutrient } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import type { Nutrient, NutrientValues } from '@/lib/nutrition';
 
 // Full class names (not built from strings) so Tailwind can find them. Same macro colors as Today.
@@ -23,6 +23,7 @@ type Props = {
 
 /** Nutrients for the amount being logged: big kcal, colored macros, then fiber/sugar/salt. */
 export function NutrientPreview({ values, incomplete }: Props) {
+  const { formatNutrient } = useFormat();
   const { t } = useTranslation();
   const show = (n: Nutrient) => formatNutrient(values?.[n] ?? null, incomplete.includes(n), DIGITS[n] ?? 0);
 

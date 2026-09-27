@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Text, View } from 'react-native';
 
-import { formatNumber, formatNutrient } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { type NutrientTotals, nutrientProgress } from '@/lib/day';
 import type { Nutrient } from '@/lib/nutrition';
 import { TARGET_KIND, type Targets } from '@/lib/targets';
@@ -22,6 +22,7 @@ type Props = { totals: NutrientTotals; targets: Targets };
 
 /** Three macro tiles: eaten / target with a progress bar in the macro's color. */
 export function MacroTiles({ totals, targets }: Props) {
+  const { formatNumber, formatNutrient } = useFormat();
   const { t } = useTranslation();
 
   return (
@@ -51,6 +52,7 @@ export function MacroTiles({ totals, targets }: Props) {
 
 /** Compact fiber (at least) / sugar and salt (at most) row. Limits turn "over" when passed. */
 export function LimitsRow({ totals, targets }: Props) {
+  const { formatNumber, formatNutrient } = useFormat();
   const { t } = useTranslation();
 
   return (

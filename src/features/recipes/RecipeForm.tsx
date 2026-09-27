@@ -12,7 +12,7 @@ import { NumberField } from '@/features/common/NumberField';
 import { NameFields } from '@/features/foods/NameFields';
 import { NutrientPreview } from '@/features/foods/NutrientPreview';
 import { PortionsEditor } from '@/features/foods/PortionsEditor';
-import { formatNumber, formatNutrient, localizedName } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { MAX_COOKED_WEIGHT_G, MAX_INGREDIENT_GRAMS, recipePreview, type RecipeNutrition } from '@/lib/recipe';
 import { useIngredientPickerStore } from '@/store/ingredientPicker';
 import { useThemeColors } from '@/theme/useThemeColors';
@@ -72,6 +72,7 @@ export function RecipeForm({ initial, recipeId, note, submitLabel, onSubmit, onD
 }
 
 function IngredientList({ onAdd }: { onAdd: () => void }) {
+  const { formatNumber, formatNutrient, localizedName } = useFormat();
   const { t } = useTranslation();
   const { colors } = useThemeColors();
   const { control, formState, getValues } = useFormContext<RecipeInput>();
@@ -169,6 +170,7 @@ function IngredientList({ onAdd }: { onAdd: () => void }) {
 }
 
 function CookedWeightField({ rawWeightG }: { rawWeightG: number | null }) {
+  const { formatNumber } = useFormat();
   const { t } = useTranslation();
   const { control } = useFormContext<RecipeInput>();
   return (
@@ -199,6 +201,7 @@ function CookedWeightField({ rawWeightG }: { rawWeightG: number | null }) {
 }
 
 function RecipeResult({ preview }: { preview: RecipeNutrition | null }) {
+  const { formatNumber, formatNutrient } = useFormat();
   const { t } = useTranslation();
   const incomplete = preview?.incompleteNutrients ?? [];
   return (

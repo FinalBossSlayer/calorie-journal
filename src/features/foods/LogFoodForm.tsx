@@ -10,7 +10,7 @@ import type { Meal } from '@/db/queries/log';
 import { Button } from '@/features/common/Button';
 import { ChipGroup } from '@/features/common/ChipGroup';
 import { NumberField } from '@/features/common/NumberField';
-import { formatNumber, localizedName } from '@/i18n/format';
+import { useFormat } from '@/i18n/format';
 import { MAX_ENTRY_GRAMS } from '@/lib/logging';
 import type { Nutrient, NutrientValues } from '@/lib/nutrition';
 
@@ -51,6 +51,7 @@ export function LogFoodForm({
   onSubmit,
   onDelete,
 }: Props) {
+  const { formatNumber, localizedName } = useFormat();
   const { t } = useTranslation();
   const insets = useSafeAreaInsets();
   const form = useForm<LogFormInput, unknown, LogFormValues>({
