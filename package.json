@@ -63,7 +63,8 @@
     "typecheck": "tsc --noEmit",
     "test": "jest",
     "seed:download": "tsx scripts/seed/download.ts",
-    "seed:build": "tsx scripts/seed/build.ts"
+    "seed:build": "tsx scripts/seed/build.ts",
+    "icons": "tsx scripts/icon/make-icons.ts"
   },
   "private": true,
   "jest": {

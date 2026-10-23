@@ -11,8 +11,9 @@
       "icon": "./assets/expo.icon"
     },
     "android": {
+      "package": "mk.caloriejournal.app",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#141413",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
@@ -29,10 +30,11 @@
         "expo-splash-screen",
         {
           "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76,
+          "imageWidth": 120,
           "backgroundColor": "#F7F6F2",
           "dark": {
-            "backgroundColor": "#141413"
+            "backgroundColor": "#141413",
+            "image": "./assets/images/splash-icon-dark.png"
           }
         }
       ],
@@ -43,6 +45,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "3aee2906-1f9b-4ece-9499-0f9083e1692d"
+      }
+    },
+    "owner": "finalbossslayer"
   }
 }
